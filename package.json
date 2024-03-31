@@ -1,0 +1,17 @@
+{
+  "name": "rdp-rsu",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000W\u0000e\u0000b\u0000-\u0000R\u0000e\u0000v\u0000i\u0000s\u0000t\u0000a\u0000-\u0000D\u0000i\u0000g\u0000i\u0000t\u0000a\u0000l\u0000-\u0000d\u0000e\u0000-\u0000P\u0000r\u0000o\u0000y\u0000e\u0000c\u0000t\u0000o\u0000s\u0000-\u0000R\u0000S\u0000U\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run start-server\" \"npm run start-client\"",
+    "start-server": "cd server && node Api.js",
+    "start-client": "cd client && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
