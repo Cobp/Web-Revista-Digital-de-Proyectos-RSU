@@ -1,0 +1,88 @@
+.timecard_container {
+  margin-top: 44px;
+  max-width: 1150px;
+  width: 100%;
+  padding: 0 15px;
+  display: flex;
+  gap: 3em;
+}
+
+.timecard-side-container {
+  flex-direction: column;
+  width: 300px;
+  height: 100%;
+  gap: 1em;
+}
+
+.timecard-side-container .button-add-hours {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border: none;
+  color: var(--color-gris4);
+  border-radius: 8px;
+  color: var(--color-gris4);
+  background-color: transparent;
+  font-size: var(--fz-text-subtitulo);
+  outline-color: var(--color-gris1);
+  transition: all ease 0.3s;
+  cursor: pointer;
+
+  &:hover{
+    color: var(--color-gris4);
+    background-color: var(--color-blanco2);
+  }
+
+  &:active {
+    opacity: .8;
+    transform: scale(.98);
+  }
+}
+
+.timecard-side-container .button-add-hours svg {
+  width: 30px;
+}
+
+.data-container-of-the-day {
+  padding: 10px;
+}
+
+.data-container-of-the-day .day {
+  max-width: 60px;
+  height: 60px;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 15px;
+  border-radius: 12px;
+  color: var(--color-blanco1);
+  background: linear-gradient(to top, var(--color-rojo2), var(--color-salmon5));
+  box-shadow: var(--b-shadow);
+}
+
+.data-container-of-the-day .today {
+  text-transform: capitalize;
+  font-size: var(--fz-text-titulo2);
+  font-weight: 700 !important;
+  color: var(--color-gris4);
+}
+
+.data-container-of-the-day .register-ueb {
+  font-size: var(--fz-text-titulo3);
+  font-weight: 500 !important;
+  color: var(--color-gris1);
+}
+
+.card-donut-chart .title {
+  text-transform: capitalize;
+  font-size: var(--fz-text-titulo2);
+  font-weight: 700 !important;
+  color: var(--color-gris4);
+}
+
+.card-donut-chart .description {
+  font-size: var(--fz-text-titulo3);
+  font-weight: 500 !important;
+  color: var(--color-gris1);
+}

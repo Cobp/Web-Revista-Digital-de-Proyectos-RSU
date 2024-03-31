@@ -1,0 +1,802 @@
+{
+    "Proyects" : [
+        {
+            "image": "https://img.freepik.com/free-photo/veterinary-farm-walking-cowshed-checking-cows_1303-31158.jpg?t=st=1710288304~exp=1710291904~hmac=fa8f986ff23ec0c96f9522ec88745336b310d66bb4d767138e9008f136f3c2fc&w=1060",
+            "Codigo_Proyecto": "006",
+            "Nombre_Proyecto": "CAPACITACION EN ELABORACION DE BLOQUES MULTINUTRICIONALES PARA GANADO BOVINO EN EL MUNICIPIO DE VALLEGRANDE",
+            "Semestre_inicio": "I / 2018",
+            "Semestre_finalizacion": "II / 2025",
+            "Funcion_universitaria": [
+                "02",
+                "INTERACCION SOCIAL"
+            ],
+            "Carrera_Responsable":[
+                "MVZ - ",
+                "MEDICINA",
+                "VETERINARIA",
+                "ZOOTECNIA"
+            ],
+            "Facultad_Responsable": [
+                "06",
+                "CIENCIAS AGRICOLAS",
+                "BIOLOGIA",
+                "PSICOLOGIA"
+            ],
+            "CoordResponsable":[
+                "1310",
+                "GUZMAN MENDEZ WILMAN"
+            ],
+            "Datos_responsable_interno": [
+                "3560990-361",
+                "mvz@ueb.edu.bo"
+            ], 
+            "Entidad_externa_vinculada": [
+                "05",
+                "GOBIERNO AUTONOMO MUNICIPAL DE VALLEGRANDE"
+            ],
+            "Datos_entidad_externa": [
+                "n/t",
+                "n/t"
+            ]
+        },
+        {
+            "image": "https://img.freepik.com/free-photo/close-up-veterinarian-taking-care-cat_23-2149100172.jpg?t=st=1710288255~exp=1710291855~hmac=486dbc667f5a9226e9d5513a5c1d8c73f576c00f8680ad12b3b95e09ec5ea425&w=1060",
+            "Codigo_Proyecto": "007",
+            "Nombre_Proyecto": "MI MASCOTA FELIZ",
+            "Semestre_inicio": "I / 2019",
+            "Semestre_finalizacion": "II / 2025",
+            "Funcion_universitaria": [
+                "02",
+                "INTERACCION SOCIAL"
+            ],
+            "Carrera_Responsable":[
+                "MVZ - ",
+                "MEDICINA",
+                "VETERINARIA",
+                "ZOOTECNIA"
+            ],
+            "Facultad_Responsable": [
+                "06",
+                "CIENCIAS AGRICOLAS",
+                "BIOLOGIA",
+                "PSICOLOGIA"
+            ],
+            "CoordResponsable":[
+                "1310",
+                "GUZMAN MENDEZ WILMAN"
+            ],
+            "Datos_responsable_interno": [
+                "3560990-361",
+                "mvz@ueb.edu.bo"
+            ], 
+            "Entidad_externa_vinculada": [
+                "07",
+                "SUB ALCALDÍA DEL DISTRITO MUNICIPAL"
+            ],
+            "Datos_entidad_externa": [
+                "n/t",
+                "n/t"
+            ]
+        },
+        {
+            "image": "https://img.freepik.com/free-photo/female-nurse-taking-care-older-woman-with-medical-mask_23-2148757759.jpg?t=st=1710288428~exp=1710292028~hmac=d1c65369c4a33b9917f4da99631f0f0f7a82cb65b11c7c864a6f395d40ce8d9c&w=1060",
+            "Codigo_Proyecto": "017",
+            "Nombre_Proyecto": "PROMOCIÓN DE SALUD EN LOS DISTRITOS MUNICIPALES 9 Y 10DE SANTA CRUZ DE LA SIERRA",
+            "Semestre_inicio": "I / 2019",
+            "Semestre_finalizacion": "II / 2025",
+            "Funcion_universitaria": [
+                "02",
+                "INTERACCION SOCIAL"
+            ],
+            "Carrera_Responsable":[
+                "BFM - ",
+                "BIOQUIMICA Y FARMACIA"
+            ],
+            "Facultad_Responsable": [
+                "03",
+                "CIENCIAS DE LA SALUD"
+            ],
+            "CoordResponsable":[
+                "1296",
+                "ROJAS GUSMAN WUALTER"
+            ],
+            "Datos_responsable_interno": [
+                "3560990-311",
+                "jefaturabfm@ueb.edu.bo"
+            ], 
+            "Entidad_externa_vinculada": [
+                "01",
+                "SERVICIO DEPARTAMENTAL DE SALUD SEDES"
+            ],
+            "Datos_entidad_externa": [
+                "n/t",
+                "n/t"
+            ]
+        },
+        {
+            "image": "https://img.freepik.com/free-photo/side-view-young-girl-talking-therapist_23-2150136598.jpg?t=st=1710288220~exp=1710291820~hmac=e2259bf7613f2c186c66b9e27fce638309c13092cf24a19a39ec207b193d55be&w=1060",
+            "Codigo_Proyecto": "018",
+            "Nombre_Proyecto": "UNIDAD DE INVESTIGACIÓN EN PSICOLOGÍA",
+            "Semestre_inicio": "I / 2018",
+            "Semestre_finalizacion": "II / 2025",
+            "Funcion_universitaria": [
+                "01",
+                "INVESTIGACION"
+            ],
+            "Carrera_Responsable":[
+                "PSI - ",
+                "PSICOLOGIA"
+            ],
+            "Facultad_Responsable": [
+                "07",
+                "CIENCIAS EDUCATIVAS,",
+                "TEOLOGIA"
+            ],
+            "CoordResponsable":[
+                "1437",
+                "BARRIOS SUAREZ ANDREA"
+            ],
+            "Datos_responsable_interno": [
+                "3560990-INT",
+                "psi@ueb.edu.bo"
+            ], 
+            "Entidad_externa_vinculada": [
+                "00",
+                "n/t"
+            ],
+            "Datos_entidad_externa": [
+                "n/t",
+                "n/t"
+            ]
+        },
+        {
+            "image": "https://img.freepik.com/free-photo/nutritionist-his-office-measures-volume-his-patient-s-waist_496169-1480.jpg?t=st=1710288192~exp=1710291792~hmac=ddbc00672e9ec5c34a135292bfec520791d5670c20c381d9bdae96f985ed888d&w=1060",
+            "Codigo_Proyecto": "019",
+            "Nombre_Proyecto": "INVIERTE EN NUTRICION Y AHORRA EN MEDICINA",
+            "Semestre_inicio": "I / 2020",
+            "Semestre_finalizacion": "II / 2024",
+            "Funcion_universitaria": [
+                "03",
+                "SERVICIO"
+            ],
+            "Carrera_Responsable":[
+                "NUT - ",
+                "NUTRICION Y DIETETICA"
+            ],
+            "Facultad_Responsable": [
+                "03",
+                "CIENCIAS DE LA SALUD"
+            ],
+            "CoordResponsable":[
+                "922",
+                "MILLUNI CABRERA MIRIAM RAQUEL"
+            ],
+            "Datos_responsable_interno": [
+                "3560990",
+                "nut@ueb.edu.bo"
+            ], 
+            "Entidad_externa_vinculada": [
+                "00",
+                "n/t"
+            ],
+            "Datos_entidad_externa": [
+                "n/t",
+                "n/t"
+            ]
+        },
+        {
+            "image": "https://img.freepik.com/free-photo/closeup-athletic-woman-adding-strawberries-while-making-fruit-salad-kitchen_637285-6186.jpg?t=st=1710288170~exp=1710291770~hmac=c502f53b194ba464cc638f50acb063b5c46b4a50b70c1d7793227c738f08b657&w=1060",
+            "Codigo_Proyecto": "020",
+            "Nombre_Proyecto": "FORTALECIMIENTO A CENTROS DE LA FUNDACION LA ROCA",
+            "Semestre_inicio": "I / 2019",
+            "Semestre_finalizacion": "II / 2024",
+            "Funcion_universitaria": [
+                "03",
+                "SERVICIO"
+            ],
+            "Carrera_Responsable":[
+                "NUT - ",
+                "NUTRICION Y DIETETICA"
+            ],
+            "Facultad_Responsable": [
+                "03",
+                "CIENCIAS DE LA SALUD"
+            ],
+            "CoordResponsable":[
+                "922",
+                "MILLUNI CABRERA MIRIAM RAQUEL"
+            ],
+            "Datos_responsable_interno": [
+                "3560990",
+                "nut@ueb.edu.bo"
+            ], 
+            "Entidad_externa_vinculada": [
+                "00",
+                "n/t"
+            ],
+            "Datos_entidad_externa": [
+                "n/t",
+                "n/t"
+            ]
+        },
+        {
+            "image": "https://img.freepik.com/free-photo/diet-concept-with-female-scientist-healthy-food_23-2148193255.jpg?t=st=1710288142~exp=1710291742~hmac=656e385bed9741746795e46b72b9c85ceb51cd1926e25ec6f262fabee741d8b6&w=1060",
+            "Codigo_Proyecto": "021",
+            "Nombre_Proyecto": "MICROEMPRESA INNUT",
+            "Semestre_inicio": "I / 2020",
+            "Semestre_finalizacion": "II / 2024",
+            "Funcion_universitaria": [
+                "02",
+                "INTERACCION SOCIAL"
+            ],
+            "Carrera_Responsable":[
+                "NUT - ",
+                "NUTRICION Y DIETETICA"
+            ],
+            "Facultad_Responsable": [
+                "03",
+                "CIENCIAS DE LA SALUD"
+            ],
+            "CoordResponsable":[
+                "922",
+                "MILLUNI CABRERA MIRIAM RAQUEL"
+            ],
+            "Datos_responsable_interno": [
+                "3560990",
+                "nut@ueb.edu.bo"
+            ], 
+            "Entidad_externa_vinculada": [
+                "00",
+                "n/t"
+            ],
+            "Datos_entidad_externa": [
+                "n/t",
+                "n/t"
+            ]
+        },
+        {
+            "image": "https://img.freepik.com/free-photo/herd-cows-producing-milk-gruyere-cheese-france-spring_181624-45451.jpg?t=st=1710288109~exp=1710291709~hmac=050c2c49a5bae817107c93313a358c23fda2e4b4551c04e22fe6f8b994cb9393&w=1060",
+            "Codigo_Proyecto": "022",
+            "Nombre_Proyecto": "PROGRAMA DE INVESTIGACION EN BIOTECNOLOGIA DE ESPECIESTROPICALES",
+            "Semestre_inicio": "I / 2018",
+            "Semestre_finalizacion": "II / 2028",
+            "Funcion_universitaria": [
+                "01",
+                "INVESTIGACION"
+            ],
+            "Carrera_Responsable":[
+                "AGR - ",
+                "INGENIERIA AGROPECUARIA"
+            ],
+            "Facultad_Responsable": [
+                "06",
+                "CIENCIAS AGRICOLAS",
+                "BIOLOGIA"
+            ],
+            "CoordResponsable":[
+                "1147",
+                "ROCHA LIMON FLORENTINO"
+            ],
+            "Datos_responsable_interno": [
+                "3560990-361",
+                "agr@ueb.edu.bo"
+            ], 
+            "Entidad_externa_vinculada": [
+                "00",
+                "n/t"
+            ],
+            "Datos_entidad_externa": [
+                "n/t",
+                "n/t"
+            ]
+        },
+        {
+            "image": "https://img.freepik.com/free-photo/farmer-working-outdoors-harvesting-wheat-sunset-generated-by-ai_188544-21578.jpg?t=st=1710288092~exp=1710291692~hmac=98461b2b98bcd3ad21d2c69cd8bec342d5ca8a2d0a2ebcec58bd7be752b2cd1b&w=1380",
+            "Codigo_Proyecto": "023",
+            "Nombre_Proyecto": "HUERTO ESCOLAR DIDACTICO",
+            "Semestre_inicio": "I / 2018",
+            "Semestre_finalizacion": "II / 2025",
+            "Funcion_universitaria": [
+                "04",
+                "ENSEÑANZA"
+            ],
+            "Carrera_Responsable":[
+                "AGR - ",
+                "INGENIERIA AGROPECUARIA"
+            ],
+            "Facultad_Responsable": [
+                "06",
+                "CIENCIAS AGRICOLAS",
+                "BIOLOGIA"
+            ],
+            "CoordResponsable":[
+                "1147",
+                "ROCHA LIMON FLORENTINO"
+            ],
+            "Datos_responsable_interno": [
+                "3560990-361",
+                "agr@ueb.edu.bo"
+            ], 
+            "Entidad_externa_vinculada": [
+                "00",
+                "n/t"
+            ],
+            "Datos_entidad_externa": [
+                "n/t",
+                "n/t"
+            ]
+        },
+        {
+            "image": "https://img.freepik.com/free-photo/free-time-students-bachelor-s-campus-life-rhythm-five-friendly-students-are-walking_8353-6408.jpg?t=st=1710288057~exp=1710291657~hmac=749fb8231176362ed26721aeea8acdf447b2df857e6f16a5f1c4d2c73bae6c4b&w=1060",
+            "Codigo_Proyecto": "032",
+            "Nombre_Proyecto": "PROYECTO VOLUNTARIOS UEB- RESPONSABILIDAD SOCIAL",
+            "Semestre_inicio": "I / 2020",
+            "Semestre_finalizacion": "II / 2025",
+            "Funcion_universitaria": [
+                "02",
+                "INTERACCION SOCIAL"
+            ],
+            "Carrera_Responsable":[
+                "SES - ",
+                "SERVICIOS ESTUDIANTILES"
+            ],
+            "Facultad_Responsable": [
+                "00",
+                "UEB"
+            ],
+            "CoordResponsable":[
+                "563",
+                "CUELLAR RODRIGUEZ PATRICIA LOURDES"
+            ],
+            "Datos_responsable_interno": [
+                "3560990-271",
+                "servestudiantil@ueb.edu.bo"
+            ], 
+            "Entidad_externa_vinculada": [
+                "00",
+                "n/t"
+            ],
+            "Datos_entidad_externa": [
+                "n/t",
+                "n/t"
+            ]
+        },
+        {
+            "image": "https://img.freepik.com/free-photo/tablet-drug-serious-touchscreen-pharmacy_1134-730.jpg?t=st=1710288503~exp=1710292103~hmac=119bab116616b00250da6ff6962f981271ef7cd77aacd266f78ed7374ac2a038&w=1060",
+            "Codigo_Proyecto": "034",
+            "Nombre_Proyecto": "EDUCACION EN SALUD EN EL DISTRITO 9 MUNICIPAL",
+            "Semestre_inicio": "I / 2021",
+            "Semestre_finalizacion": "II / 2024",
+            "Funcion_universitaria": [
+                "04",
+                "ENSEÑANZA"
+            ],
+            "Carrera_Responsable":[
+                "BFM - ",
+                "BIOQUIMICA Y FARMACIA"
+            ],
+            "Facultad_Responsable": [
+                "03",
+                "CIENCIAS DE LA SALUD"
+            ],
+            "CoordResponsable":[
+                "1296",
+                "ROJAS GUSMAN WUALTER"
+            ],
+            "Datos_responsable_interno": [
+                "3560990-311",
+                "jefaturabfm@ueb.edu.bo"
+            ], 
+            "Entidad_externa_vinculada": [
+                "00",
+                "n/t"
+            ],
+            "Datos_entidad_externa": [
+                "n/t",
+                "n/t"
+            ]
+        },
+        {
+            "image": "https://img.freepik.com/free-photo/young-female-inventor-creating-her-workshop_23-2149067228.jpg?t=st=1710287974~exp=1710291574~hmac=ab27d3326849310d5ff8963a118f26d8b2c7ee8a7cd022ac8bd6ae7f0905cd03&w=1060",
+            "Codigo_Proyecto": "038",
+            "Nombre_Proyecto": "SOPORTE TECNICO A LA ESTACION DE BOMBEROS VOLUNTARIOS JENECHERU",
+            "Semestre_inicio": "I / 2021",
+            "Semestre_finalizacion": "II / 2024",
+            "Funcion_universitaria": [
+                "02",
+                "INTERACCION SOCIAL"
+            ],
+            "Carrera_Responsable":[
+                "ELT - ",
+                "INGENIERIA ELECTRONICA"
+            ],
+            "Facultad_Responsable": [
+                "05",
+                "CIENCIA Y TECNOLOGIA"
+            ],
+            "CoordResponsable":[
+                "920",
+                "TRIGO RODRIGUEZ RODRIGO HUMBERTO"
+            ],
+            "Datos_responsable_interno": [
+                "3560990-322",
+                "decanotecnologia@ueb.edu.bo"
+            ], 
+            "Entidad_externa_vinculada": [
+                "10",
+                "n/t"
+            ],
+            "Datos_entidad_externa": [
+                "76038585",
+                "n/t"
+            ]
+        },
+        {
+            "image": "https://img.freepik.com/free-photo/cheerful-girl-with-studies-posing-outside_23-2147666859.jpg?t=st=1710287855~exp=1710291455~hmac=2fd1d35905d17dc5a5b4e3ba7f9623d46c906fd8949a5e1100e1a5351a7ef104&w=1060",
+            "Codigo_Proyecto": "041",
+            "Nombre_Proyecto": "PROYECTO VOLUNTARIOS UEB - INVESTIGACION",
+            "Semestre_inicio": "I / 2020",
+            "Semestre_finalizacion": "II / 2025",
+            "Funcion_universitaria": [
+                "01",
+                "INVESTIGACION"
+            ],
+            "Carrera_Responsable":[
+                "SES - ",
+                "SERVICIOS ESTUDIANTILES"
+            ],
+            "Facultad_Responsable": [
+                "00",
+                "UEB"
+            ],
+            "CoordResponsable":[
+                "563",
+                "CUELLAR RODRIGUEZ PATRICIA LOURDES"
+            ],
+            "Datos_responsable_interno": [
+                "3560990-271",
+                "servestudiantil@ueb.edu.bo"
+            ], 
+            "Entidad_externa_vinculada": [
+                "n/t",
+                "n/t"
+            ],
+            "Datos_entidad_externa": [
+                "n/t",
+                "n/t"
+            ]
+        },
+        {
+            "image": "https://img.freepik.com/free-photo/smiling-woman-having-break-university_329181-12563.jpg?t=st=1710287883~exp=1710291483~hmac=977179f4bf2311a3eafa09c23322a6171027b4f38817d1ce318811d1a0cd8558&w=1060",
+            "Codigo_Proyecto": "042",
+            "Nombre_Proyecto": "PROYECTO VOLUNTARIOS UEB - ENSEÑANZA",
+            "Semestre_inicio": "I / 2020",
+            "Semestre_finalizacion": "II / 2024",
+            "Funcion_universitaria": [
+                "04",
+                "ENSEÑANZA"
+            ],
+            "Carrera_Responsable":[
+                "SES - ",
+                "SERVICIOS ESTUDIANTILES"
+            ],
+            "Facultad_Responsable": [
+                "00",
+                "UEB"
+            ],
+            "CoordResponsable":[
+                "563",
+                "CUELLAR RODRIGUEZ PATRICIA LOURDES"
+            ],
+            "Datos_responsable_interno": [
+                "3560990-271",
+                "servestudiantil@ueb.edu.bo"
+            ], 
+            "Entidad_externa_vinculada": [
+                "n/t",
+                "n/t"
+            ],
+            "Datos_entidad_externa": [
+                "n/t",
+                "n/t"
+            ]
+        },
+        {
+            "image": "https://img.freepik.com/free-photo/close-up-students-classroom_23-2148950519.jpg?t=st=1710287902~exp=1710291502~hmac=d2fab3b5f8565a04b5cd08f6a0e6d6e38a2d70c63d3bb5616e471b44e25e0d1a&w=996",
+            "Codigo_Proyecto": "043",
+            "Nombre_Proyecto": "PROYECTO VOLUNTARIOS UEB - SERVICIO",
+            "Semestre_inicio": "I / 2020",
+            "Semestre_finalizacion": "II / 2025",
+            "Funcion_universitaria": [
+                "03",
+                "SERVICIO"
+            ],
+            "Carrera_Responsable":[
+                "SES - ",
+                "SERVICIOS ESTUDIANTILES"
+            ],
+            "Facultad_Responsable": [
+                "00",
+                "UEB"
+            ],
+            "CoordResponsable":[
+                "563",
+                "CUELLAR RODRIGUEZ PATRICIA LOURDES"
+            ],
+            "Datos_responsable_interno": [
+                "3560990-271",
+                "servestudiantil@ueb.edu.bo"
+            ], 
+            "Entidad_externa_vinculada": [
+                "n/t",
+                "n/t"
+            ],
+            "Datos_entidad_externa": [
+                "n/t",
+                "n/t"
+            ]
+        },
+        {
+            "image": "https://img.freepik.com/free-photo/young-caucasian-musicians-band-performing-neon-light-blue-studio_155003-5497.jpg?t=st=1710288539~exp=1710292139~hmac=d561e108a48a19e2a02359ab6b57577d2b22411ebf7bb37887c1ccb026eec9a5&w=1060",
+            "Codigo_Proyecto": "045",
+            "Nombre_Proyecto": "PROYECTO MARCHING BAND",
+            "Semestre_inicio": "I / 2022",
+            "Semestre_finalizacion": "II / 2026",
+            "Funcion_universitaria": [
+                "02",
+                "INTERACCION SOCIAL"
+            ],
+            "Carrera_Responsable":[
+                "MUS - ",
+                "MUSICA"
+            ],
+            "Facultad_Responsable": [
+                "02",
+                "COMUNICACION Y CULTURA"
+            ],
+            "CoordResponsable":[
+                "418",
+                "LIMACHE PACHECO INGRITH"
+            ],
+            "Datos_responsable_interno": [
+                "3560990-291",
+                "mus@ueb.edu.bo"
+            ], 
+            "Entidad_externa_vinculada": [
+                "n/t",
+                "n/t"
+            ],
+            "Datos_entidad_externa": [
+                "n/t",
+                "n/t"
+            ]
+        },
+        {
+            "image": "https://img.freepik.com/free-photo/female-student-playing-violin_107420-64809.jpg?t=st=1710288573~exp=1710292173~hmac=02fd7e4512100fca5985a7df97b7ce7b43ae4f419275e646d4bf337a9f149bdb&w=1060",
+            "Codigo_Proyecto": "046",
+            "Nombre_Proyecto": "BIG BAND",
+            "Semestre_inicio": "I / 2022",
+            "Semestre_finalizacion": "II / 2026",
+            "Funcion_universitaria": [
+                "02",
+                "INTERACCION SOCIAL"
+            ],
+            "Carrera_Responsable":[
+                "MUS - ",
+                "MUSICA"
+            ],
+            "Facultad_Responsable": [
+                "02",
+                "COMUNICACION Y CULTURA"
+            ],
+            "CoordResponsable":[
+                "731",
+                "PAZ BURGOS MARTHA ROSA"
+            ],
+            "Datos_responsable_interno": [
+                "3560990-291",
+                "mus@ueb.edu.bo"
+            ], 
+            "Entidad_externa_vinculada": [
+                "n/t",
+                "n/t"
+            ],
+            "Datos_entidad_externa": [
+                "n/t",
+                "n/t"
+            ]
+        },
+        {
+            "image": "https://img.freepik.com/free-photo/examining-sample-with-microscope_1098-18424.jpg?t=st=1710288667~exp=1710292267~hmac=39b0f4a675c553aeaf6117bc5f8db94665d2b8aca2425aa8a57be0171c066ab0&w=1060",
+            "Codigo_Proyecto": "047",
+            "Nombre_Proyecto": "SEGUIMIENTO BIOQUIMICO - FARMACOTERAPEUTICO EN PACIENTES AMBULATORIOS CON TUBERCULOSIS EN CENTROS DE SALUD Y/O HOSPITALES DE LA RED SUR DE SANTA CRUZ DE LA SIERRA",
+            "Semestre_inicio": "I / 2022",
+            "Semestre_finalizacion": "II / 2025",
+            "Funcion_universitaria": [
+                "01",
+                "INVESTIGACION"
+            ],
+            "Carrera_Responsable":[
+                "BFM - ",
+                "BIOQUIMICA Y FARMACIA"
+            ],
+            "Facultad_Responsable": "03",
+            "CoordResponsable":[
+                "1296",
+                "ROJAS GUSMAN WUALTER"
+            ],
+            "Datos_responsable_interno": [
+                "3560990-311",
+                "jefaturabfm@ueb.edu.bo"
+            ], 
+            "Entidad_externa_vinculada": [
+                "n/t",
+                "n/t"
+            ],
+            "Datos_entidad_externa": [
+                "n/t",
+                "n/t"
+            ]
+        },
+        {
+            "image": "https://img.freepik.com/free-photo/man-playing-acoustic-guitar-piano-close-up-recording-notes-beautiful-color-background-music-activity-concept_169016-4459.jpg?t=st=1709865266~exp=1709868866~hmac=681fab9141d74a6c1d0358837e509bb7c920ffe8292fc2752fe84605a4ad98f8&w=1380",
+            "Codigo_Proyecto": "050",
+            "Nombre_Proyecto": "JARDIN DE PLANTAS MEDICINALES",
+            "Semestre_inicio": "I / 2022",
+            "Semestre_finalizacion": "II / 2025",
+            "Funcion_universitaria": [
+                "02",
+                "INTERACCION SOCIAL"
+            ],
+            "Carrera_Responsable":[
+                "BFM - ",
+                "BIOQUIMICA Y FARMACIA"
+            ],
+            "Facultad_Responsable": "05",
+            "CoordResponsable":[
+                "1296",
+                "ROJAS GUSMAN WUALTER"
+            ],
+            "Datos_responsable_interno": [
+                "3560990-311",
+                "jefaturabfm@ueb.edu.bo"
+            ], 
+            "Entidad_externa_vinculada": [
+                "n/t",
+                "n/t"
+            ],
+            "Datos_entidad_externa": [
+                "n/t",
+                "n/t"
+            ]
+        },
+        {
+            "image": "https://img.freepik.com/free-photo/empty-classroom-due-coronavirus-pandemic_637285-8845.jpg?t=st=1709865393~exp=1709868993~hmac=1c1beee688741ca4069554a6b0ba69c480852206423183693089759c123cd88e&w=1060",
+            "Codigo_Proyecto": "051",
+            "Nombre_Proyecto": "PROYECTO 'SALOMON'",
+            "Semestre_inicio": "I / 2022",
+            "Semestre_finalizacion": "II / 2024",
+            "Funcion_universitaria": [
+                "02",
+                "INTERACCION SOCIAL"
+            ],
+            "Carrera_Responsable":[
+                "PSI - ",
+                "PSICOLOGIA"
+            ],
+            "Facultad_Responsable": "01",
+            "CoordResponsable":[
+                "1437",
+                "BARRIOS SUAREZ ANDREAR"
+            ],
+            "Datos_responsable_interno": [
+                "3560990-221",
+                "psi@ueb.edu.bo"
+            ], 
+            "Entidad_externa_vinculada": [
+                "12",
+                "LA CASA DEL ADULTO MAYOR (PROG. DEL ADULTO MAYOR DEL MUNICIPIO)"
+            ],
+            "Datos_entidad_externa": [
+                "79852993",
+                "n/t"
+            ]
+        },
+        {
+            "image": "https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010142.jpg?t=st=1709865524~exp=1709869124~hmac=12ca11329bac4966493d9f5123a523e74fb5c39e20d7d90a3b52487402d77ef7&w=1060",
+            "Codigo_Proyecto": "052",
+            "Nombre_Proyecto": "ESCUELA DE PADRES",
+            "Semestre_inicio": "I / 2022",
+            "Semestre_finalizacion": "II / 2025",
+            "Funcion_universitaria": [
+                "02",
+                "INTERACCION SOCIAL"
+            ],
+            "Carrera_Responsable":[
+                "TEO - ",
+                "TEOLOGIA"
+            ],
+            "Facultad_Responsable": "04",
+            "CoordResponsable":[
+                "885",
+                "SALINAS CASTRO RAMIRO GONZALO"
+            ],
+            "Datos_responsable_interno": [
+                "3560992-191",
+                "teo@ueb.edu.bo"
+            ], 
+            "Entidad_externa_vinculada": [
+                "n/t",
+                "n/t"
+            ],
+            "Datos_entidad_externa": [
+                "n/t",
+                "n/t"
+            ]
+        },
+        {
+            "image": "https://img.freepik.com/free-photo/aerial-shot-beautiful-agricultural-green-field-near-mountains_181624-29589.jpg?w=1060&t=st=1709864877~exp=1709865477~hmac=04d2021c5a4abf32e77bb719fd4055b936b167c461d06991ca33b152794e899f",
+            "Codigo_Proyecto": "053",
+            "Nombre_Proyecto": "CAPELLANIA HOSPITALARIA",
+            "Semestre_inicio": "I / 2022",
+            "Semestre_finalizacion": "II / 2025",
+            "Funcion_universitaria": [
+                "02",
+                "INTERACCION SOCIAL"
+            ],
+            "Carrera_Responsable":[
+                "TEO - ",
+                "TEOLOGIA"
+            ],
+            "Facultad_Responsable": "02",
+            "CoordResponsable":[
+                "885",
+                "SALINAS CASTRO RAMIRO GONZALO"
+            ],
+            "Datos_responsable_interno": [
+                "3560992-191",
+                "teo@ueb.edu.bo"
+            ], 
+            "Entidad_externa_vinculada": [
+                "n/t",
+                "n/t"
+            ],
+            "Datos_entidad_externa": [
+                "n/t",
+                "n/t"
+            ]
+        },
+        {
+            "image": "https://img.freepik.com/free-photo/doctor-with-stethoscope-hands-hospital-background_1423-1.jpg?t=st=1709863659~exp=1709867259~hmac=f516ec0d17bd95499b4ed3186df3d3b51017fcf3075fb36ddaae43e21f6ca594&w=1060",
+            "Codigo_Proyecto": "054",
+            "Nombre_Proyecto": "BRIGADA DE NUTRICION Y SALUD",
+            "Semestre_inicio": "I / 2022",
+            "Semestre_finalizacion": "II / 2027",
+            "Funcion_universitaria": [
+                "03",
+                "SERVICIO"
+            ],
+            "Carrera_Responsable":[
+                "NUT - ",
+                "NUTRICION Y DIETETICA"
+            ],
+            "Facultad_Responsable": "03",
+            "CoordResponsable":[
+                "922",
+                "MILLUNI CABRERA MIRIAM RAQUEL"
+            ],
+            "Datos_responsable_interno": [
+                "3560990-312",
+                "nut@ueb.edu.bo"
+            ], 
+            "Entidad_externa_vinculada": [
+                "n/t",
+                "n/t"
+            ],
+            "Datos_entidad_externa": [
+                "n/t",
+                "n/t"
+            ]
+        }
+    ]
+}

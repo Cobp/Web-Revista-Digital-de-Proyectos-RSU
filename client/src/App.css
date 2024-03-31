@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Exo 2", sans-serif;
+}
+
+:root {
+    --color-principal: #ffffff;
+    --color-secundario: #bb262d;
+    --color-terciario: #cecece;
+    --color-cuarto: #8b8b8b;
+    --color-quinto: #f3f6f4;
+    --color-sexto: #353535;
+    --color-septimo: #e3e4e5;
+
+
+    --color-blanco1: #ffffff;
+    --color-blanco2: #f3f6f4;
+    --color-blanco3: #e3e4e5;
+    --color-blanco4: #cecece;
+    --color-gris1: #8b8b8b;
+    --color-gris2: #535353;
+    --color-gris3: #374151;
+    --color-gris4: #353535;
+    --color-negro1: #1c1c1c;
+    --color-negro2: #000000;
+    --color-rojo1: #561216;
+    --color-rojo2: #bb262d;
+    --color-rojo3: #de3630;
+    --color-salmon1: #d44533;
+    --color-salmon2: #f0633f;
+    --color-salmon3: #ff605c;
+    --color-salmon4: #ff4141;
+    --color-salmon5: #ff0004;
+
+    --b-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
+
+    --fz-text-big-titulo: 60px;
+    --fz-text-titulo: 36px;
+    --fz-text-titulo1: 22px;
+    --fz-text-titulo2: 18px;
+    --fz-text-titulo3: 16px;
+    --fz-text-subtitulo: 14px;
+    --fz-text-subtitulo2: 12px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+body {
+    background-color: var(--color-principal);
+}
+
+.App {
+    scrollbar-gutter: auto;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.W-100 {
+    width: 100%;
+}
+
+.H-100 {
+    height: 100%;
+}
+
+.H-100VH {
+    height: 100vh;
+}
+
+.H-100WV {
+    height: 100vw;
+}
+
+.D-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.D-justify {
+    display: flex;
+    justify-content: center;
+}
+
+.D-aling {
+    display: flex;
+    align-items: center;
+}
+
+.Just-SpaceB{
+    justify-content: space-between
+}
+.P-10px{
+    padding: 10px;
+}
+/* .B-Shadow{
+    padding: 10px;
+    border: 2px solid var(--color-blanco4);
+    box-shadow: var(--b-shadow);
+    border-radius: 8px;
+} */
+
+.G-1 {
+    gap: 1rem;
+}
+
+.R-position {
+    position: relative;
+}
+
+.line-vertical {
+    width: 100%;
+    height: 1px;
+    border-radius: 2px;
+    background-color: var(--color-blanco4);
+}
+
+.line-horizontal {
+    width: 1px;
+    height: 100%;
+    border-radius: 2px;
+    background-color: var(--color-blanco4);
+}

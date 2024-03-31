@@ -1,0 +1,15 @@
+.container_for_all_proyects{
+    margin-top: 44px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px; 
+    max-width: 1150px;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:1079px){
+    .container_for_all_proyects{
+        justify-content: center;
+    }
+}

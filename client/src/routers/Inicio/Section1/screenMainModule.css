@@ -1,0 +1,108 @@
+.main_container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .8)0%, rgba(0, 0, 0, .5)100%), url(../../../assets/images/MainPicture.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.content_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 15px;
+    gap: 1em;
+}
+
+.content_main .titulo_principal {
+    text-align: center;
+    color: var(--color-blanco1);
+    font-size: clamp(30px, 8vw, 55px);
+}
+
+.content_main .primary_content {
+    color: var(--color-blanco1);
+    font-size: var(--fz-text-titulo2);
+    font-weight: 500;
+    list-style: none;
+    text-align: center;
+    line-height: 30px;
+}
+
+.content_main .primary_content a {
+    color: var(--color-rojo2);
+
+    &:hover {
+        color: var(--color-salmon4);
+    }
+}
+
+.content_main .secondary_content {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-rojo2);
+    text-align: center;
+}
+
+.main_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    gap: 2rem;
+}
+
+.main_buttons .container_btn {
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px) scale(1.05);
+    }
+
+    &:active {
+        transform: translateY(-0) scale(.95);
+    }
+}
+
+.main_buttons .container_btn a {
+    padding: 0 15px;
+}
+
+.main_buttons .container_btn svg {
+    width: 1.5em;
+    height: 1.5em;
+    color: var(--color-blanco1);
+}
+
+.main_buttons .container_btn .btn_all_proyects,
+.main_buttons .container_btn .btn_quiz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-rojo2);
+    color: var(--color-blanco1);
+    border: none;
+    border-radius: 6px;
+    width: fit-content;
+    height: 45px;
+    padding: 12px 30px;
+    gap: .5rem;
+    font-size: var(--fz-text-titulo3);
+    font-weight: 700;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+}
+
+.main_buttons .container_btn .btn_quiz {
+    border: 2px solid var(--color-blanco4);
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    color: var(--color-blanco1);
+}

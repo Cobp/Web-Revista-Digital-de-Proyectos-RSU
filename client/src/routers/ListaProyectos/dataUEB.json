@@ -1,0 +1,11 @@
+{
+    "Academico" : [
+        {"option": "Todos"},
+        {"option": "Fc. Agropecuaria y Veterinaria"},
+        {"option": "Fc. Ciencias de la Comunicación y Cultura"},
+        {"option": "Fc. Ciencias y Tecnología"},
+        {"option": "Fc. Ciencias de la Salud"},
+        {"option": "Fc. Ciencias Empresariales"},
+        {"option": "Fc. Ciencias Educativas y Sociales"}
+    ]
+}

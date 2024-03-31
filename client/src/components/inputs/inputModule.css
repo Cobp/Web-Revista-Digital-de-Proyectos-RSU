@@ -1,0 +1,37 @@
+.container_inputs {
+  display: flex;
+  gap: .5rem;
+}
+
+.container_inputs:hover > :not(:hover){
+  transform: scale(.9);
+  opacity: .4;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container svg {
+  height: 28px;
+  width: 28px;
+  border-radius: 4px;
+  transition: all 0.3s;
+  color: var(--color-terciario);
+}
+
+.container input:checked~svg {
+  color: var(--color-secundario);
+}
