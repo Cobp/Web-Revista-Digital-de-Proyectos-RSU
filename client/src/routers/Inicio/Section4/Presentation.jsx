@@ -1,4 +1,4 @@
-import { BarChart, LineChart, PieChart } from "../../../components"
+import { BarChart, LineChart, DonutChart } from "../../../components"
 import './chartsModule.css'
 
 const Presentation = () => {
@@ -7,7 +7,7 @@ const Presentation = () => {
     <div className="estadisticas">
       <BarChart data={data}/>
       <LineChart data={data}/>
-      <PieChart data={data}/>
+      <DonutChart data={data}/>
     </div>
   )
 }

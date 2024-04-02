@@ -1,4 +1,4 @@
-import { Inicio, PDisponibles, FAQ, HorasRSU } from "./routers";
+import { Inicio, PDisponibles, FAQ, HorasRSU, Login } from "./routers";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import "./App.css"
 
@@ -11,6 +11,7 @@ function App() {
           <Route path="/FAQ" exact Component={FAQ} />
           <Route path="/proyectos-rsu" exact Component={PDisponibles} />
           <Route path="/Reg-horas-rsu" exact Component={HorasRSU} />
+          <Route path="/login" exact Component={Login} />
         </Routes>
       </Router>
     </div>

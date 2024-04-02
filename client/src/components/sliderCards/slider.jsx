@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import { CaretLeft, CaretRight } from '../../assets/index.js';
 import Verify from './verificador.jsx';
 import data from './data.json';
 
 const SlideItem = ({ slider }) => {
     return (
         <div className="slider-item">
-            {slider.image && <img className='image_fondo' src={slider.image} alt='' />}
+            {slider.image && <img className='image_fondo' src={slider.image} alt={slider.Nombre_Proyecto} />}
             <div className="items">
                 <Verify facultad={slider.Facultad_Responsable} />
                 <div className="card_content">
@@ -23,6 +24,14 @@ const Slider = () => {
     const [isPaused, setIsPaused] = useState(false);
     const sliderData = data.Proyects.slice(-5);
     const totalSlides = sliderData.length;
+    
+    const handleNext = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % sliderData.length);
+      }
+    
+      const handlePrev = () => {
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + sliderData.length) % sliderData.length);
+      }
 
     useEffect(() => {
         const handleVisibilityChange = () => {
@@ -65,10 +74,13 @@ const Slider = () => {
                     </div>
                 ))}
             </div>
+            <button type='button' className='left' onClick={handlePrev}><CaretLeft/></button>
+            <button type='button' className='right' onClick={handleNext}><CaretRight/></button>
             <style>
                 {` .slider-wrap{
                         position: relative;
                         width: 100%;
+                        border-radius: 8px;
                         overflow: hidden;
                     }
                     .slider-wrap .slider-wrap-hidden{
@@ -84,31 +96,63 @@ const Slider = () => {
                         left: 50%;
                         display: flex;
                         transform: translate(-50%);
-                        gap: .5em;
+                        gap: .3em;
                     }
                     .slider-wrap .buttons .indicator{
-                        width: 8px;
-                        height: 8px;
+                        width: 6px;
+                        height: 6px;
                         border-radius: 50px;
                         background-color: #cecece;
                         transition: .3s ease-in-out;
                         cursor: pointer;
+
+                        &:hover{
+                            transform: scale(1.15)
+                        }
                     }
                     .slider-wrap .buttons .indicator.active{
                         width: 25px;
                         transform: scale(1.2);
                         background-color: var(--color-secundario);
                     }
-                    .slider-wrap .buttons .indicator:hover{
-                        background-color: var(--color-secundario);
+
+                    .slider-wrap .left,
+                    .slider-wrap .right{
+                        position: absolute;
+                        top: 45%;
+                        border: none;
+                        background-color: var(--color-gris2);
+                        color: var(--color-blanco4);
+                        border-radius: 5px;
+                        width: 30px;
+                        height: 30px;
+                        padding: 3px;
+                        margin: 5px;
+                        opacity: 0;
+                        visibility: hidden;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: rgba(0, 0, 0, 0.5);
+                            color: var(--color-gris1);
+                        }
+                    }
+                    .slider-wrap:hover .left,
+                    .slider-wrap:hover .right{
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                    .slider-wrap .lef{
+                        left: 0;
+                    }
+                    .slider-wrap .right{
+                        right: 0;
                     }
                     .slider-item {
                         position: relative;
                     }
                     .slider-item .items{
                         height: 300px;
-                        padding: 10px;
-                        border-radius: 8px;
+                        padding: 20px;
                         display: flex;
                         justify-content: space-between;
                         flex-direction: column;
@@ -122,7 +166,6 @@ const Slider = () => {
                         height: 100%;
                         filter: contrast();
                         z-index: -1;
-                        border-radius: 8px;
                     
                     }
                     .slider-item .card_content{

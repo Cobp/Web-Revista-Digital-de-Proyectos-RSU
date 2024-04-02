@@ -10,6 +10,11 @@ export { ReactComponent as IconoSvg9 } from './svgs/Responsive-pana.svg';
 export { ReactComponent as IconoSvg10 } from './svgs/Timeline-bro.svg';
 export { ReactComponent as IconoSvg11 } from './svgs/Product quality-pana.svg';
 
+export { ReactComponent as Gallery } from './svgs/gallery.svg';
+export { ReactComponent as Column } from './svgs/column.svg';
+export { ReactComponent as Search } from './svgs/search_list.svg';
+
+
 export { ReactComponent as Clock } from './svgs/Clock.svg';
 export { ReactComponent as ClockEdit } from './svgs/ClockEdit.svg';
 export { ReactComponent as ClockPlus } from './svgs/ClockPlus.svg';

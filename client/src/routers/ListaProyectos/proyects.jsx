@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import { ReactComponent as IconoSvg1 } from '../../assets/svg/gallery.svg';
-import { ReactComponent as IconoSvg2 } from '../../assets/svg/column.svg';
-import { ReactComponent as IconoSvg3 } from '../../assets/svg/search_list.svg';
+import { NavbarRed  } from '../../components';
+import { Gallery, Column, Search } from '../../assets';
 import Data from '../../components/sliderCards/data.json';
 import Cards from './contCards/contCards';
 import Filter from './filtradoCards/filtrado';
@@ -21,39 +20,42 @@ const Proyects = () => {
 
   const iconFilter = [
     {
-      svg: <IconoSvg1 />,
+      svg: <Gallery />,
       title: "Galleria"
     },
     {
-      svg: <IconoSvg2 />,
+      svg: <Column />,
       title: "Columna"
     },
   ];
 
-  const iconSearch = { svg: <IconoSvg3 />, placeholder: "Buscar proyecto..." };
+  const iconSearch = { svg: <Search />, placeholder: "Buscar proyecto..." };
 
   return (
-    <div className='container_for_all_proyects'>
-      <Cards
-        projectsData={projectsData}
-        classe={classe}
-        setClasse={setClasse}
-        checkedIndex={checkedIndex}
-        setCheckedIndex={setCheckedIndex}
-        iconFilter={iconFilter}
-        iconSearch={iconSearch}
-        searchTerm={searchTerm}
-        setSearchTerm={setSearchTerm}
-        selectedId={selectedId}
-        setSelectedId={setSelectedId}
-      />
-      <Filter
-        iconSearch={iconSearch}
-        searchTerm={searchTerm}
-        setSearchTerm={setSearchTerm}
-        activeOption={activeOption}
-        handleOptionClick={handleOptionClick}
-      />
+    <div className='Main'>
+      <NavbarRed/>
+      <div className='container_for_all_proyects'>
+        <Cards
+          projectsData={projectsData}
+          classe={classe}
+          setClasse={setClasse}
+          checkedIndex={checkedIndex}
+          setCheckedIndex={setCheckedIndex}
+          iconFilter={iconFilter}
+          iconSearch={iconSearch}
+          searchTerm={searchTerm}
+          setSearchTerm={setSearchTerm}
+          selectedId={selectedId}
+          setSelectedId={setSelectedId}
+        />
+        <Filter
+          iconSearch={iconSearch}
+          searchTerm={searchTerm}
+          setSearchTerm={setSearchTerm}
+          activeOption={activeOption}
+          handleOptionClick={handleOptionClick}
+        />
+      </div>
     </div>
   );
 };

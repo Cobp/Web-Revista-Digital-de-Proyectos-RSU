@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { NavbarRed } from '../../components';
 import { motion } from 'framer-motion';
 import './FAQsModule.css';
 
@@ -62,7 +63,9 @@ const CollapsibleTimeline = () => {
     };
 
     return (
-        <div className="timeline">
+        <div className='Main'>
+            <NavbarRed/>
+            <div className="timeline">
             <h1>Preguntas Frecuentes RSU</h1>
             {Datos.map((item, index) => (
                 <div className={`timeline__item ${openIndex === index ? 'active' : ''}`}
@@ -107,6 +110,7 @@ const CollapsibleTimeline = () => {
                     </motion.div>
                 </div>
             ))}
+        </div>
         </div>
     );
 };

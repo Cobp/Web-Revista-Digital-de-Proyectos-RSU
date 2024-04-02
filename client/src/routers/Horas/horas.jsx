@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { ClockPlus } from "../../assets/index.js";
-import { Calendario, ProgressCircle } from "../../components/index.js";
+import { Calendario, ProgressCircle, NavbarRed } from "../../components/index.js";
 import "./horasModule.css";
 
 const Calendar = () => {
@@ -20,7 +20,9 @@ const Calendar = () => {
   }, [setSelectedDate]);
 
   return (
-    <section className="timecard_container">
+    <div className="Main">
+      <NavbarRed/>
+      <section className="timecard_container">
       <div className="D-center timecard-side-container">
         <div className="D-aling W-100 data-container-of-the-day">
           {selectedDate && (
@@ -57,7 +59,8 @@ const Calendar = () => {
           <span className="prueba"></span>
         </div>
       </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

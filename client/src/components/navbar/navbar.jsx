@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import LogoUEB from '../../assets/images/logo2-ueb-transparente.png'
+import LogoUEB from '../../assets/images/logo2-ueb-transparente.webp'
 
 const Navbar = () => {
     const [clickedLink, setClickedLink] = useState(null);

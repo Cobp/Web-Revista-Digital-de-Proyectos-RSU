@@ -102,12 +102,6 @@ body {
 .P-10px{
     padding: 10px;
 }
-/* .B-Shadow{
-    padding: 10px;
-    border: 2px solid var(--color-blanco4);
-    box-shadow: var(--b-shadow);
-    border-radius: 8px;
-} */
 
 .G-1 {
     gap: 1rem;

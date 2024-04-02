@@ -18,13 +18,13 @@ const ContainerCards = () => {
       title: "ACCESIBILIDAD",
       svg2: <IconoComputadora />,
       img: 'https://img.freepik.com/free-photo/business-woman-hand-with-financial-charts-mobile-phone-laptop-table_1232-4863.jpg?t=st=1709924719~exp=1709928319~hmac=c229a256e07e350ccdd81feb06ccfe72ae0d488f046cfd5902ede54cc338a614&w=1060',
-      description: "Flexibilidad y Comodidad al alcance de distintos Dispositivos"
+      description: "Flexibilidad y Comodidad a tu alcance en distintos Dispositivos"
     },
     {
       title: "Ingreso de horas",
       svg2: <IconoCalendario />,
       img: 'https://img.freepik.com/free-photo/woman-checking-calendar_53876-13451.jpg?t=st=1709924403~exp=1709928003~hmac=42c8e68ce1cc3252e85c6506480e7e6a31989af29773fee30d2c49ad6c60f0bc&w=1060',
-      description: "La Manera mas Rapida y Util de Marcar tus Horas RSU"
+      description: "La Manera mas Rápida y Útil de Marcar tus Horas RSU"
     }, {
       title: "FAQ",
       svg2: <IconoFAQ />,

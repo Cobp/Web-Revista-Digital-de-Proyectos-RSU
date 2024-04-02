@@ -1,0 +1,92 @@
+.login-screen{
+    background-image: url('https://img.freepik.com/free-vector/graduation-hats-concept-illustration_114360-12054.jpg?w=740&t=st=1712028988~exp=1712029588~hmac=080e3d7c2e97151f7e7fcc19b60f09c908545f721ab6ab3f8b738979c6ff296a');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.Login-form-container {
+    max-width: 1150px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Login-form-container .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    border: 2px solid var(--color-blanco4);
+    background-color: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(5px);
+    position: relative;
+    gap: 1em;
+    z-index: 1;
+    padding: 50px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.form .logo-UEB {
+    width: 250px;
+}
+
+.form .input,
+.form button {
+    outline: none;
+    border: 1px solid rgba(255, 0, 0, 0);
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.form .input {
+    font-size: var(--fz-text-titulo3);
+    height: 40px;
+    width: 250px;
+    padding: 5px 8px 5px 10px;
+    box-shadow: inset 4px 4px 4px rgba(165, 163, 163, 0.315), 4px 4px 4px rgba(218, 218, 218, 0.13);
+}
+
+.form .forgot {
+    color: var(--color-gris3);
+    font-size: var(--fz-text-subtitulo);
+}
+
+.form button {
+    width: 100px;
+    background-color: var(--color-rojo2);
+    color: var(--color-blanco1);
+    font-size: medium;
+    box-shadow: var(--b-shadow);
+    transition: .3s ease;
+    cursor: pointer;
+    &:hover{
+        transform: translateY(-3px);
+    }
+    &:active{
+        transform: translateY(0);
+    }
+}
+.Login-form-container span{
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    bottom: 50px;
+}
+.Login-form-container a{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fz-text-titulo2);
+    text-decoration: none;
+    color: var(--color-rojo2);
+}
+.Login-form-container a svg{
+    width: 25px;
+    height: 25px;
+}

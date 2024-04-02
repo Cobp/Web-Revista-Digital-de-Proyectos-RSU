@@ -56,7 +56,7 @@ const PercentDonutChart = ({ data }) => {
           />
         );
       })}
-      <circle r="65" cx="90" cy="90" fill="#ffffff"></circle>
+      <circle r="70" cx="90" cy="90" fill="#ffffff"></circle>
     </svg>
   );
 }
