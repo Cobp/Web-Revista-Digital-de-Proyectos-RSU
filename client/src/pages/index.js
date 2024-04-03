@@ -3,5 +3,4 @@ export { default as PDisponibles} from './ListaProyectos/proyects.jsx'
 export { default as HorasRSU} from './Horas/horas.jsx'
 export { default as FAQ} from './FAQs/FAQs.jsx'
 export { default as Login} from './Register/Login.jsx'
-
-
+export { default as Admin} from './Admin/AdminMode.jsx'

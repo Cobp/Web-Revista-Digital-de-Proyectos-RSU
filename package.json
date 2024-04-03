@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently \"npm run start-server\" \"npm run start-client\"",
-    "start-server": "cd server && node Api.js",
+    "start-server": "cd server && npm run dev",
     "start-client": "cd client && npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "morgan": "^1.10.0"
   }
 }

@@ -23,10 +23,10 @@ const Navbar = () => {
             name: "Contáctenos",
             link: "https://ueb.edu.bo/contactenos/"
         },
-        // {
-        //     name: "Administ",
-        //     link: "/mode-administ"
-        // },
+        {
+            name: "Administ",
+            link: "/mode-administ"
+        },
         {
             name: "Regístrate",
             link: "/login"
