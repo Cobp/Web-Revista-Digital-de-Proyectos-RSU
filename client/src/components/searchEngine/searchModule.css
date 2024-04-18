@@ -3,43 +3,48 @@
   line-height: 28px;
   align-items: center;
   position: relative;
-  max-width: 190px;
+  max-width: 300px;
+  &:hover svg{
+    color: var(--color-gris2);
+  }
 }
 
 .group .input {
   width: 100%;
-  line-height: 28px;
-  padding: 0 1rem;
-  padding-right: 2.2rem;
-  border: 2px solid transparent;
+  font-weight: 500;
+  line-height: 26px;
+  padding: 0 2em 0 .5rem;
+  border: 2px solid var(--color-blanco2);
   border-radius: 8px;
   outline: none;
-  background-color: var(--color-quinto);
-  color: #8b8b8b;
+  background-color: transparent;
+  color: var(--color-gris2);
   transition: 0.3s ease;
   z-index: 1;
-}
-
-.group .input::placeholder {
-  color: #9e9ea7;
-}
-
-.group .input:focus,
-.group input:hover {
-  outline: none;
-  border-color: var(--color-terciario);
-  background-color: #fff;
-  box-shadow: 0 0 0 4px var(--color-quinto);
+  user-select: none;
+  &::placeholder{
+    color: var(--color-blanco4);
+  }
+  &:focus{
+    border-color: var(--color-gris2);
+    background-color: #fff;
+    &~svg{
+      color: var(--color-gris2);
+    }
+  }
+  
 }
 
 .group svg {
   position: absolute;
-  top: 1.5px;
-  right: 1.5px;
-  background-color: var(--color-quinto);
-  border-radius: 0 8px 8px 0;
-  color: #9e9ea7;
-  width: 28px;
-  height: 28px;
+  top: -.5px;
+  right: 0;
+  background-color: transparent;
+  color: var(--color-blanco4);
+  width: 30px;
+  height: 30px;
+  padding: 5px;
   z-index: 2;
+  transition: all .3s ease;
+  cursor: pointer;
 }

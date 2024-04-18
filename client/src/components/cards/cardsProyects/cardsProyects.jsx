@@ -1,11 +1,6 @@
-import { motion } from "framer-motion"
-
 const card2 = ({item, index, setSelectedId}) => {
     return (
-        <motion.div key={index}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: .05 * index + .05 }}
+        <div key={index}
             className='cards'
             onClick={() => setSelectedId(item)}>
             <div className='image_container'>
@@ -16,7 +11,7 @@ const card2 = ({item, index, setSelectedId}) => {
                 <p className="title_card">{item.Nombre_Proyecto}</p>
                 <p className="description_card">{item.Carrera_Responsable}</p>
             </div>
-        </motion.div>
+        </div>
     )
 }
 

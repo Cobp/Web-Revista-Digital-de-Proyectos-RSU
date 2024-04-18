@@ -1,11 +1,17 @@
 export { default as NavbarRed} from './navbar/navbar.jsx';
 export { default as NavbarWhite} from './navbar/NavbarWhite.jsx';
 
+export { default as SelectedCardProyects} from './cards/selectedCardProyects/selectedCardProyects.jsx';
+export { default as CardProyects} from './cards/cardsProyects/cardsProyects.jsx';
+
 export { default as Slider} from './sliderCards/slider.jsx';
-export { default as Card1} from './cards/selectedCardProyects.jsx';
-export { default as Card2} from './cards/cardsProyects.jsx';
+
 export { default as Checkbox} from './inputs/inputs.jsx';
 export { default as Search} from './searchEngine/search.jsx';
+export { default as Drawer} from './Drawer/Drawer.jsx';
+
+export { default as Tab} from './TabView/Tab.jsx';
+export { default as TabView} from './TabView/TabView.jsx';
 
 export { default as BarChart} from './charts/BarChart.jsx';
 export { default as LineChart} from './charts/LineChart.jsx';

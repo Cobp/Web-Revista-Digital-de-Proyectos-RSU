@@ -1,4 +1,5 @@
 .Main{
+    scrollbar-gutter: stable both-edges;
     display: flex;
     flex-direction: column;
     align-items: center;

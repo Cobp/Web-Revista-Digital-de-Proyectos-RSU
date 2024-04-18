@@ -62,7 +62,7 @@
   border-spacing: 0px;
 }
 
-.calendar-day {
+.container_calendar .calendar-day {
   width: 36px;
   height: 36px;
   font-size: 14px;
@@ -75,28 +75,27 @@
   outline-color: var(--color-blanco3);
   background-color: transparent;
   cursor: pointer;
+  &:hover{
+    background-color: var(--color-blanco2);
+  }
 }
 
-.calendar-day:hover {
-  background-color: var(--color-blanco2);
-}
-
-.calendar-header{
+.container_calendar .calendar-header{
   text-transform: capitalize;
 }
 
-.calendar-header,
-.calendar-day.inactive {
+.container_calendar .calendar-header,
+.container_calendar .calendar-day.inactive {
   font-weight: 500;
   color: var(--color-gris1);
 }
 
-.calendar-day.active {
+.container_calendar .calendar-day.active {
   font-weight: 600;
   color: var(--color-gris3);
 }
 
-.calendar-day.active.today {
+.container_calendar .calendar-day.active.today {
   color: var(--color-blanco1);
   background-color: var(--color-salmon4);
   font-weight: 700;

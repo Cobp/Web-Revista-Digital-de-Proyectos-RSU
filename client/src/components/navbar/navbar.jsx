@@ -45,11 +45,6 @@ const Navbar = () => {
     return (
         <header>
             <nav className="navbar-container">
-                <div className={`menu-icon ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
                 <a href="https://ueb.edu.bo/" title="Universidad Evangélica Boliviana">
                     <img src={LogoUEB} alt="" />
                 </a>
@@ -66,6 +61,11 @@ const Navbar = () => {
                         </li>
                     ))}
                 </ul>
+                <div className={`menu-icon ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
             <style>
                 {`

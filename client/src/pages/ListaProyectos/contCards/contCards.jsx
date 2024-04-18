@@ -1,6 +1,6 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { Card1, Card2, Checkbox, Search } from '../../../components/index';
+import { CardProyects, SelectedCardProyects, Checkbox, Search } from '../../../components';
 import './contCardmodule.css';
 
 const ContCards = ({
@@ -10,6 +10,7 @@ const ContCards = ({
   searchTerm, setSearchTerm,
   selectedId, setSelectedId }) => {
 
+  const contentRef = useRef(null)
   const handleCheckboxChange = (index) => {
     if (checkedIndex !== index) {
       setCheckedIndex(index);
@@ -27,10 +28,17 @@ const ContCards = ({
         setSelectedId(null);
       }
     };
+    const handleClickOutside = (e) => {
+      if (contentRef.current && !contentRef.current.contains(e.target)) {
+        setSelectedId(null);
+      }
+    };
 
     document.addEventListener('keydown', handleKeyPress);
+    document.addEventListener('mousedown', handleClickOutside);
     return () => {
       document.removeEventListener('keydown', handleKeyPress);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [setSelectedId]);
 
@@ -47,14 +55,20 @@ const ContCards = ({
         {projectsData
           .filter((project) => project.Nombre_Proyecto.toLowerCase().includes(searchTerm.toLowerCase()))
           .map((project, index) => (
-            <Card2 item={project} index={index} setSelectedId={setSelectedId}/>
+            <CardProyects item={project} index={index} setSelectedId={setSelectedId}/>
           ))}
       </div>
       <AnimatePresence>
         {selectedId && (
-          <Card1 selectedId={selectedId} setSelectedId={setSelectedId}/>
+          <SelectedCardProyects selectedId={selectedId} setSelectedId={setSelectedId} contentRef={contentRef}/>
         )}
       </AnimatePresence>
+      <style>{`
+        body{
+          margin-right:${selectedId ? '15px' : '0'} !important;
+          overflow: ${selectedId ? 'hidden' : 'auto'};
+        }
+      `}</style>
     </div>
   );
 };

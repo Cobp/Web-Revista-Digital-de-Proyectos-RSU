@@ -1,17 +1,20 @@
 .timecard_container {
   margin-top: 44px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
   max-width: 1150px;
   width: 100%;
-  padding: 0 15px;
-  display: flex;
-  gap: 3em;
+  height: 100%;
 }
 
 .timecard-side-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   width: 300px;
   height: 100%;
-  gap: 1em;
 }
 
 .timecard-side-container .button-add-hours {
@@ -28,7 +31,7 @@
   transition: all ease 0.3s;
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     color: var(--color-gris4);
     background-color: var(--color-blanco2);
   }
@@ -43,46 +46,100 @@
   width: 30px;
 }
 
-.data-container-of-the-day {
-  padding: 10px;
-}
 
-.data-container-of-the-day .day {
-  max-width: 60px;
-  height: 60px;
-  padding: 5px;
-  margin-right: 10px;
-  font-size: 35px;
-  font-weight: 600;
-  line-height: 15px;
-  border-radius: 12px;
-  color: var(--color-blanco1);
-  background: linear-gradient(to top, var(--color-rojo2), var(--color-salmon5));
-  box-shadow: var(--b-shadow);
-}
 
-.data-container-of-the-day .today {
-  text-transform: capitalize;
-  font-size: var(--fz-text-titulo2);
-  font-weight: 700 !important;
-  color: var(--color-gris4);
-}
-
-.data-container-of-the-day .register-ueb {
-  font-size: var(--fz-text-titulo3);
-  font-weight: 500 !important;
-  color: var(--color-gris1);
-}
 
 .card-donut-chart .title {
   text-transform: capitalize;
   font-size: var(--fz-text-titulo2);
-  font-weight: 700 !important;
+  font-weight: 700;
   color: var(--color-gris4);
 }
 
 .card-donut-chart .description {
   font-size: var(--fz-text-titulo3);
-  font-weight: 500 !important;
+  font-weight: 500;
   color: var(--color-gris1);
+}
+
+/* .container-calendar {
+  padding: 15px;
+} */
+
+.Container-DayOfTheWeek {
+  width: 100%;
+  max-width: 1150px;
+  padding: 15px 0;
+}
+
+.Container-DayOfTheWeek .DayOfTheWeek {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  font-size: var(--fz-text-titulo2);
+  color: var(--color-gris2);
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.Container-DayOfTheWeek .DayOfTheWeek.isDay {
+  border-radius: 6px;
+  background-color: var(--color-rojo2);
+  color: var(--color-blanco1);
+}
+
+.Container-Days .calendar-day {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 5px;
+  outline: none;
+  font-size: var(--fz-text-titulo1);
+  font-weight: 500;
+  line-height: 18px;
+  height: 100px;
+  cursor: pointer;
+  transition: all .3s ease;
+
+  &:hover {
+    background-color: var(--color-blanco2);
+  }
+}
+
+.Container-Days .calendar-day svg {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 25px;
+  height: 25px;
+  padding: 3px;
+  border-radius: 6px;
+  opacity: 0;
+
+  &:hover {
+    color: var(--color-blanco1);
+    background-color: var(--color-gris2);
+  }
+}
+
+.Container-Days .calendar-day:hover svg {
+  opacity: 1;
+}
+
+.Container-Days .calendar-day.active {
+  color: var(--color-gris2);
+}
+
+.Container-Days .calendar-day.inactive {
+  color: var(--color-blanco4);
+}
+
+.Container-Days .calendar-day.active.today {
+  color: var(--color-rojo2);
+  font-weight: 600;
 }

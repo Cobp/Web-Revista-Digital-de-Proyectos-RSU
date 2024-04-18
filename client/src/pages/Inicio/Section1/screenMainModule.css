@@ -18,16 +18,17 @@
     height: 100%;
     padding: 15px;
     gap: 1em;
+    user-select: none;
 }
 
 .content_main .titulo_principal {
     text-align: center;
     color: var(--color-blanco1);
-    font-size: clamp(30px, 8vw, 55px);
+    font-size: clamp(20px, 6vw, 60px);
 }
 
 .content_main .primary_content {
-    color: var(--color-blanco1);
+    color: var(--color-blanco4);
     font-size: var(--fz-text-titulo2);
     font-weight: 500;
     list-style: none;
@@ -36,20 +37,20 @@
 }
 
 .content_main .primary_content a {
-    color: var(--color-rojo2);
+    color: var(--color-salmon4);
 
     &:hover {
-        color: var(--color-salmon4);
+        color: var(--color-rojo2);
     }
 }
 
 .content_main .secondary_content {
     font-size: 24px;
     font-weight: 600;
-    /* background: linear-gradient(to left, #f89b29 0%, #ff0f7b 100% );
+    background: linear-gradient(to top, var(--color-salmon4) 0%, var(--color-rojo2) 100% );
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+    -webkit-text-fill-color: transparent;
     color: var(--color-rojo2);
     text-align: center;
 }
@@ -59,15 +60,11 @@
     align-items: center;
     justify-content: center;
     padding-top: 25px;
-    gap: 2rem;
+    gap: .5rem;
 }
 
 .main_buttons .container_btn {
     transition: all 0.3s ease;
-
-    &:hover {
-        transform: translateY(-5px) scale(1.05);
-    }
 
     &:active {
         transform: translateY(-0) scale(.95);
@@ -79,34 +76,41 @@
 }
 
 .main_buttons .container_btn svg {
-    width: 1.5em;
-    height: 1.5em;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
     color: var(--color-blanco1);
 }
 
 .main_buttons .container_btn .btn_all_proyects,
 .main_buttons .container_btn .btn_quiz {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color-rojo2);
-    color: var(--color-blanco1);
-    border: none;
     border-radius: 6px;
     width: fit-content;
     height: 45px;
-    padding: 12px 30px;
-    gap: .5rem;
+    padding: .5em 1em;
     font-size: var(--fz-text-titulo3);
-    font-weight: 700;
+    font-weight: 600;
     text-decoration: none;
     transition: all .3s ease-in-out;
-    overflow: hidden;
+}
+
+.main_buttons .container_btn .btn_all_proyects{
+    border: 2px solid var(--color-rojo3);
+    background-color: var(--color-rojo2);
+    backdrop-filter: blur(5px);
+    color: var(--color-blanco1);
+    &:hover {
+        background-color: #9c2127;
+        color: var(--color-blanco1);
+    }
 }
 
 .main_buttons .container_btn .btn_quiz {
-    border: 2px solid var(--color-blanco4);
+    border: 2px solid var(--color-gris1);
     background-color: transparent;
     backdrop-filter: blur(5px);
     color: var(--color-blanco1);
+    &:hover {
+        background-color: rgba(255, 255, 255, .1);
+    }
 }

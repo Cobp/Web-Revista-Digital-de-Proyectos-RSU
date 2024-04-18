@@ -6,7 +6,10 @@ const PercentDonutChart = ({ data }) => {
   const centerX = 90;
   const centerY = 90;
   const radius = 90;
-  const [animatedData, setAnimatedData] = useState(new Array(data.length).fill(0));
+  const Lenght = data.length
+
+  const [animatedData, setAnimatedData] = useState(new Array(Lenght).fill(0));
+
 
   useEffect(() => {
     const animationDuration = 1000; // milliseconds
@@ -50,8 +53,7 @@ const PercentDonutChart = ({ data }) => {
           <path
             key={index}
             d={pathData}
-            strokeWidth="2"
-            fill={`hsl(${index * (data.length * 7)}, 100%, 50%)`}
+            fill={`hsl(${357.1812080536913 * (Lenght * (index +1))}, 66.22222222222221%, 44.11764705882353%)`}
             stroke='#ffffff'
           />
         );

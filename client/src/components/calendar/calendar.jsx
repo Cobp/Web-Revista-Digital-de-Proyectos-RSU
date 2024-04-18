@@ -1,9 +1,7 @@
-import { useState } from 'react';
 import { CaretLeft, CaretRight } from '../../assets/index';
 import './CalendarModule.css'
 
-const Calendario = ({ setSelectedDate }) => {
-    const [currentMonth, setCurrentMonth] = useState(new Date());
+const Calendario = ({ setSelectedDate, currentMonth, setCurrentMonth }) => {
 
     const goToMonth = (delta) => {
         setCurrentMonth(prevMonth => {
@@ -49,14 +47,14 @@ const Calendario = ({ setSelectedDate }) => {
         <div className="B-Shadow container_calendar">
             <div className='date_calendar'>
                 <button type="button" onClick={() => goToMonth(-1)}>
-                    <CaretLeft/>
+                    <CaretLeft />
                 </button>
                 <p>{currentMonth.toLocaleString('default', { month: 'long', year: 'numeric' })}</p>
                 <button type="button" onClick={() => goToMonth(1)} >
-                    <CaretRight/>
+                    <CaretRight />
                 </button>
             </div>
-            <div className='line-vertical'/>
+            <div className='line-vertical' />
             <div className='container_table_days'>
                 <table className="calendar">
                     <thead>
@@ -73,18 +71,18 @@ const Calendario = ({ setSelectedDate }) => {
                             <tr key={weekIndex}>
                                 {week.map((date, dayIndex) => (
                                     <td key={dayIndex}>
-                                        {isToday(date) ? 
-                                        <button
-                                            className={`calendar-day ${date && date.getMonth() === currentMonth.getMonth() ? 'active' : 'inactive'} ${isToday(date) ? 'today' : ''} `}
-                                            onClick={() => date && handleDateClick(date)}>
-                                            {date && date.getDate()}
-                                        </button>
-                                        :
-                                        <p
-                                            className={`calendar-day ${date && date.getMonth() === currentMonth.getMonth() ? 'active' : 'inactive'} ${isToday(date) ? 'today' : ''} `}
-                                            onClick={() => date && handleDateClick(date)}>
-                                            {date && date.getDate()}
-                                        </p>
+                                        {isToday(date) ?
+                                            <button
+                                                className={`calendar-day ${date && date.getMonth() === currentMonth.getMonth() ? 'active' : 'inactive'} ${isToday(date) ? 'today' : ''} `}
+                                                onClick={() => date && handleDateClick(date)}>
+                                                {date && date.getDate()}
+                                            </button>
+                                            :
+                                            <p
+                                                className={`calendar-day ${date && date.getMonth() === currentMonth.getMonth() ? 'active' : 'inactive'} ${isToday(date) ? 'today' : ''} `}
+                                                onClick={() => date && handleDateClick(date)}>
+                                                {date && date.getDate()}
+                                            </p>
                                         }
                                     </td>
                                 ))}

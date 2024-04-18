@@ -1,13 +1,27 @@
-import { useState, useEffect } from "react";
-import { ClockPlus } from "../../assets/index.js";
-import { Calendario, ProgressCircle, NavbarRed } from "../../components/index.js";
+import { useEffect, useState } from "react";
+import { Calendario, Drawer, NavbarRed } from "../../components";
 import "./horasModule.css";
+import { Section1 } from './sections/section1';
 
 const Calendar = () => {
   const [selectedDate, setSelectedDate] = useState(null);
+  // const [selectedButton, setSelectedButton] = useState(null);
+  const [currentMonth, setCurrentMonth] = useState(new Date());
+  const [isOpen, setIsOpen] = useState(false);
 
-  var datos = 46;
-  var valor = ((datos / 200) * 100).toFixed(0);
+  const toggleDrawer = () => {
+    setIsOpen(!isOpen);
+  };
+
+  // var datos = 46;
+  // var valor = ((datos / 200) * 100).toFixed(0);
+  // const goToMonth = (delta) => {
+  //   setCurrentMonth((prevMonth) => {
+  //     const newMonth = new Date(prevMonth);
+  //     newMonth.setMonth(prevMonth.getMonth() + delta);
+  //     return newMonth;
+  //   });
+  // };
 
   useEffect(() => {
     const dayInfo = {
@@ -20,47 +34,26 @@ const Calendar = () => {
   }, [setSelectedDate]);
 
   return (
-    <div className="Main">
-      <NavbarRed/>
-      <section className="timecard_container">
-      <div className="D-center timecard-side-container">
-        <div className="D-aling W-100 data-container-of-the-day">
-          {selectedDate && (
-            <>
-              <p className="D-center W-100 day">{selectedDate.day}</p>
-              <div className="W-100">
-                <p className="today">{selectedDate.today}</p>
-                <p className="register-ueb">123456789-UEB</p>
-              </div>
-            </>
-          )}
-          <ProgressCircle data={valor} />
-        </div>
-        <div>
-          <button type="button" className="D-center button-add-hours">
-            <ClockPlus/>
-          </button>
-        </div>
-        {/* <div className="D-aling W-100 G-1 B-Shadow card-donut-chart">
-          <ProgressCircle data={valor} />
-          <div>
-            <p className="title">{datos}/200 Horas</p>
-            <p className="description">Promedio de Avance</p>
-          </div>
-        </div> */}
-        <Calendario setSelectedDate={setSelectedDate} />
+    <section className="Main">
+      <NavbarRed />
+      <div className="D-justify W-100 column timecard_container">
+        <button type="button" onClick={toggleDrawer}>
+          ClickMe
+        </button>
+        <Section1 selectedDate={selectedDate}/>
       </div>
-      <div className="user-data-container">
-        <div className="timecard_container">
-          <h2>Registro RSU</h2>
-          <span className="prueba"></span>
-          <span className="prueba"></span>
-          <span className="prueba"></span>
-          <span className="prueba"></span>
+      <Drawer isOpen={isOpen} setIsOpen={setIsOpen} toggleDrawer={toggleDrawer}>
+        <h1>Nombre del proyecto seleccionado</h1>
+        <div className="D-aling">
+          <Calendario
+            setSelectedDate={setSelectedDate}
+            currentMonth={currentMonth}
+            setCurrentMonth={setCurrentMonth}
+          />
+          <textarea name="" id="" cols="30" rows="10"></textarea>
         </div>
-      </div>
-      </section>
-    </div>
+      </Drawer>
+    </section>
   );
 };
 

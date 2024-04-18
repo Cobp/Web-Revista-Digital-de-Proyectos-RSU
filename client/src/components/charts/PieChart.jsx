@@ -7,7 +7,7 @@ const PieChart = ({ data }) => {
     const centerY = 90;
     const radius = 90;
     let startAngle = 0;
-    const lenght = data.length
+    const Lenght = data.length
 
     return (
       <svg viewBox="0 0 180 180" width="100px" height="100px">
@@ -32,7 +32,7 @@ const PieChart = ({ data }) => {
               transition={{ delay: 0.2 * index + .1 }}
               d={pathData}
               strokeWidth="2"
-              fill={`hsl(${index * (lenght * 7) }, 100%, 50%)`}
+            fill={`hsl(${357.1812080536913 * (Lenght * (index +1))}, 66.22222222222221%, 44.11764705882353%)`}
               stroke='#ffffff'
             />
           );
