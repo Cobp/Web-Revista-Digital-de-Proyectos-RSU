@@ -12,6 +12,7 @@ export { default as Drawer} from './Drawer/Drawer.jsx';
 
 export { default as Tab} from './TabView/Tab.jsx';
 export { default as TabView} from './TabView/TabView.jsx';
+export { default as TabViewFlex} from './TabView/TabViewFlex.jsx';
 
 export { default as BarChart} from './charts/BarChart.jsx';
 export { default as LineChart} from './charts/LineChart.jsx';
@@ -23,3 +24,5 @@ export { default as Skeleton} from './skeleton/skeleton.jsx';
 export { default as AnimationText} from './animateText/AnimateText.jsx';
 
 export { default as Calendario} from './calendar/calendar.jsx';
+
+export { default as Tooltip} from './Tooltips/tooltip.jsx';

@@ -1,0 +1,86 @@
+.tab-view-flex{
+    margin-top: 44px;
+    width: 100%;
+    display: flex;
+}
+.tab-view-flex .tab-container{
+    padding: 0 5px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    & label{
+        margin-bottom: 10px;
+    }
+    & .Name{
+        font-size: var(--fz-text-titulo2);
+        font-weight: 600;
+        color: var(--color-gris4);
+    }
+    & .Register{
+        font-size: var(--fz-text-titulo3);
+        line-height: 12px;
+        color: var(--color-blanco4);
+    }
+}
+.tab-view-flex .tab-container .tab-buttons-container{
+    & .tab-button-flex{
+        position: relative;
+        width: 100%;
+        padding: 5px 10px;
+        margin: 5px 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border: none;
+        border-radius: 8px;
+        color: var(--color-gris2);
+        background-color: transparent;
+        font-size: var(--fz-text-subtitulo);
+        font-weight: 600;
+        cursor: pointer;
+        transition: .3s ease;
+        gap: 5px;
+        & svg{
+            padding: 3px;
+            width: 30px;
+            height: 30px;
+        }
+        &:hover{
+            background-color: var(--color-blanco2);
+        }
+        &.active{
+            background-color: rgb(255, 65, 65, .2);
+            color: var(--color-rojo2);
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            top: 50%;
+            left: 5px;
+            width: 2px;
+            height: 0%;
+            border-radius: 8px;
+            transform: translateY(-50%);
+            transition: .3s ease;
+            background-color: var(--color-rojo2);
+            color: var(--color-rojo2);
+        }
+        &.active::after{
+            position: absolute;
+            content: '';
+            top: 50%;
+            left: 5px;
+            width: 2.5px;
+            height: 70%;
+            border-radius: 8px;
+            transform: translateY(-50%);
+            transition: .3s ease;
+            background-color: var(--color-rojo2);
+            color: var(--color-rojo2);
+        }
+    }
+}
+.tab-view-flex .tab-content-flex{
+    width: 100%;
+}

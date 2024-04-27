@@ -1,21 +1,49 @@
 import { QRCodeSVG } from "qrcode.react";
-import { 
-    IconoStarFilled, 
-    IconoStarHalfFilled, 
-    Plus, 
-    IconoStar
+import {
+    // IconoStarFilled,
+    // IconoStarHalfFilled,
+    Plus,
+    // IconoStar,
+    IconoWhatsapp,
+    IconoFacebook,
+    IconoInstagram,
+    IconoTwitterX,
 } from "../../../assets";
+import Img from '../../../assets/images/logo-ueb-transparente.webp'
 import './selectedCard.Module.css'
+import { Tooltip } from "../..";
 
 const card1 = ({ selectedId, setSelectedId, contentRef }) => {
-    const URL = `https://ProyectosRSU/proyectos-rsu/{selectedId}`;
-    const Value = false;
-    const users = 54;
-    const rating = 0;
-    const DateStarRating = rating / users;
-    const filledStars = Math.floor(DateStarRating);
-    const remainder = rating - filledStars;
-    const reviewMessage = DateStarRating === 0 ? '' : DateStarRating >= 3 ? 'Mayormente positivo' : 'Mayormente negativo';
+    const URL = `https://ProyectosRSU/proyectos-rsu:${selectedId.Codigo_Proyecto}`;
+    const Share = [
+        {
+            icon: <IconoWhatsapp/>,
+            label: "Whatsapp",
+            url: '',
+        },
+        {
+            icon: <IconoFacebook/>,
+            label: "Facebook",
+            url: '',
+        },
+        {
+            icon: <IconoInstagram/>,
+            label: "Instagram",
+            url: '',
+        },
+        {
+            icon: <IconoTwitterX/>,
+            label: "Twitter",
+            url: '',
+        }
+    ]
+    // const Value = false;
+    // const users = 54;
+    // const rating = 0;
+    // const DateStarRating = rating / users;
+    // const filledStars = Math.floor(DateStarRating);
+    // const remainder = rating - filledStars;
+    // const reviewMessage = DateStarRating === 0 ? '' : DateStarRating >= 3 ? 'Mayormente positivo' : 'Mayormente negativo';
 
     return (
         <div className="card_show_selected">
@@ -28,8 +56,8 @@ const card1 = ({ selectedId, setSelectedId, contentRef }) => {
                         <img src={selectedId.image} alt="" />
                     </div>
                     <div className='W-100 padding2430 column content-card-selected'>
-                        <div className="D-aling">
-                            <div className="D-aling W-100">
+                        <div className="D-aling W-100">
+                            {/* <div className="D-aling W-100">
                                 <div className="D-aling star-rating">
                                     {[...Array(5)].map((_, index) => (
                                         <i key={index} className="btnStar">
@@ -45,7 +73,7 @@ const card1 = ({ selectedId, setSelectedId, contentRef }) => {
                                 </div>
                                 <p className="D-center user-rating">{DateStarRating.toFixed(1)} ({DateStarRating === 0 ? "Sin Reseñas" : `${users} Reseñas`})</p>
                                 <p className="D-center user-rating">{reviewMessage}</p>
-                            </div>
+                            </div> */}
                             <p className="date code_p">Codigo del Proyecto: {selectedId.Codigo_Proyecto}</p>
                         </div>
                         <div>
@@ -62,16 +90,9 @@ const card1 = ({ selectedId, setSelectedId, contentRef }) => {
                 </div>
                 <div className="D-justify Just-SpaceB column W-100 H-100" >
                     <div className="container-card-secundary-data">
-                        <div className="container-card-download" >
-                            <div className="D-aling" style={{ backgroundColor: "var(--color-rojo2)", padding: "10px"}}>
-                                <div className="D-aling column W-100">
-                                    <p style={{color: "var(--color-blanco1)", textAlign: "center", padding: "0 0 10px 0"}}>
-                                        Descarga la Revista Digital de Proyectos RSU
-                                    </p>
-                                    <button className="btnSelectedCard" type="button" style={{ border: "2px solid white"}}>
-                                        Descargar
-                                    </button>
-                                </div>
+                        <div className="container-card-footer">
+                            <div className="container-card-download" >
+                                <img className="Logo-UEB" src={Img} alt="Logo UEB"/>
                                 <div className="QR-svg">
                                     <QRCodeSVG
                                         value={URL}
@@ -81,6 +102,18 @@ const card1 = ({ selectedId, setSelectedId, contentRef }) => {
                                     />
                                 </div>
                             </div>
+                            <div className="share-social-media">
+                                <h4>Compartir Proyecto :</h4>
+                                {Share.map((item, index) => (
+                                    <Tooltip
+                                        label={item.label}
+                                        position={"bottom"}
+                                        url={item.url}
+                                        key={index} >
+                                        {item.icon}
+                                    </Tooltip>
+                                ))}
+                            </div>
                         </div>
                         <div className="container-card-date_C-E-R-R">
                             <div>
@@ -89,15 +122,15 @@ const card1 = ({ selectedId, setSelectedId, contentRef }) => {
                                 <p className="date date_C-R-E-E">Datos responsable interno: <span className="user-rating">{selectedId.Datos_responsable_interno}</span></p>
                                 <p className="date date_C-R-E-E">Entidad externa vinculada: <span className="user-rating">{selectedId.Entidad_externa_vinculada}</span></p>
                                 <p className="date date_C-R-E-E">Datos entidad externa: <span className="user-rating">{selectedId.Datos_entidad_externa}</span></p>
-
+                                <p className="date date_C-R-E-E">Validacióndel Proyecto: <span className="user-rating">{selectedId.Semestre_inicio}-{selectedId.Semestre_finalizacion}</span></p>
+                                <p className="date date_C-R-E-E">Horas Acumulativas</p>
                             </div>
-                            <div className="D-aling alingEnd JustifyEnd W-100 G-1">
+                            {/* <div className="D-aling alingEnd JustifyEnd W-100 G-1">
                                 <div className="D-aling G-1">
-                                    <p className="date">{selectedId.Semestre_inicio}-{selectedId.Semestre_finalizacion}</p>
                                     <button type="button" className="btnSelectedCard" disabled={!Value}>Iniciar proyecto</button>
                                     {!Value && <button type="button" className="btnSelectedCard">Iniciar sesión</button>}
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

@@ -5,8 +5,14 @@ export { ReactComponent as Search } from './svgs/search_list.svg';
 export { ReactComponent as IconoStar } from './svgs/Star.svg';
 export { ReactComponent as IconoStarFilled } from './svgs/StarFilled.svg';
 export { ReactComponent as IconoStarHalfFilled } from './svgs/StarHalfFilled.svg';
+export { ReactComponent as IconoUser } from './svgs/User.svg';
+export { ReactComponent as IconoUserSR } from './svgs/UserSR.svg';
+export { ReactComponent as IconoUserSearch } from './svgs/UserSearch.svg';
 export { ReactComponent as IconoUserStar } from './svgs/UserStar.svg';
 
+export { ReactComponent as IconoFolders } from './svgs/Folders.svg';
+
+export { ReactComponent as IconoChart } from './svgs/Chart.svg';
 export { ReactComponent as IconoQR } from './svgs/QR.svg';
 export { ReactComponent as IconoDownload } from './svgs/Download.svg';
 export { ReactComponent as IconoFileDownload } from './svgs/FolderOpen.svg';
@@ -30,3 +36,11 @@ export { ReactComponent as IconoCalendario } from './svgs/calendario.svg';
 export { ReactComponent as IconoComputadora } from './svgs/computadora.svg';
 export { ReactComponent as IconoFolder } from './svgs/folder.svg';
 export { ReactComponent as IconoFAQ } from './svgs/faq.svg';
+export { ReactComponent as IconoLink } from './svgs/Link.svg';
+
+
+export { ReactComponent as IconoWhatsapp } from './svgs/Whatsapp.svg';
+export { ReactComponent as IconoFacebook } from './svgs/Facebook.svg';
+export { ReactComponent as IconoInstagram } from './svgs/Instagram.svg';
+export { ReactComponent as IconoTwitterX } from './svgs/X.svg';
+

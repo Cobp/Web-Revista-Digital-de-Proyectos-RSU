@@ -13,6 +13,7 @@ function App() {
           <Route path="/mode-administ" exact Component={Admin} />
           <Route path="/Reg-horas-rsu" exact Component={HorasRSU} />
           <Route path="/proyectos-rsu" exact Component={PDisponibles} />
+          <Route path="/proyectos-rsu/:id" exact Component={PDisponibles} />
         </Routes>
       </Router>
     </div>

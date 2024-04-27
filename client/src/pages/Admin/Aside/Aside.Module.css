@@ -1,0 +1,33 @@
+.container-users-data{
+    min-width: 300px;
+}
+.container-user .card-user{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 4px;
+    &:hover{
+        background-color: var(--color-blanco2);
+    }
+    & p{
+        font-size: var(--fz-text-subtitulo);
+        line-height: 17px;
+    }
+}
+.container-user svg{
+    margin-right: 5px;
+    width: 34px;
+    height: 34px;
+    color: var(--color-gris1);
+}
+.text-name-user{
+    font-weight: 600;
+    color: var(--color-gris4);
+}
+.text-name-carrer{
+    color: var(--color-gris1);
+}
+.text-name-reg{
+    color: var(--color-rojo2);
+}

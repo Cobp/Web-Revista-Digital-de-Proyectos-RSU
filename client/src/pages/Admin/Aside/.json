@@ -1,0 +1,152 @@
+[
+  {
+    "name": "John Doe",
+    "registro": "123456",
+    "carrer": "Computer Science"
+  },
+  {
+    "name": "Jane Smith",
+    "registro": "789012",
+    "carrer": "Electrical Engineering"
+  },
+  {
+    "name": "Michael Johnson",
+    "registro": "345678",
+    "carrer": "Mechanical Engineering"
+  },
+  {
+    "name": "Emily Davis",
+    "registro": "901234",
+    "carrer": "Chemical Engineering"
+  },
+  {
+    "name": "Daniel Wilson",
+    "registro": "567890",
+    "carrer": "Civil Engineering"
+  },
+  {
+    "name": "Sophia Taylor",
+    "registro": "123450",
+    "carrer": "Biomedical Engineering"
+  },
+  {
+    "name": "Matthew Anderson",
+    "registro": "678901",
+    "carrer": "Aerospace Engineering"
+  },
+  {
+    "name": "Olivia Martinez",
+    "registro": "234567",
+    "carrer": "Industrial Engineering"
+  },
+  {
+    "name": "Ethan Hernandez",
+    "registro": "890123",
+    "carrer": "Environmental Engineering"
+  },
+  {
+    "name": "Ava Lopez",
+    "registro": "456789",
+    "carrer": "Software Engineering"
+  },
+  {
+    "name": "William Garcia",
+    "registro": "012345",
+    "carrer": "Computer Engineering"
+  },
+  {
+    "name": "Isabella Rodriguez",
+    "registro": "567890",
+    "carrer": "Electrical Engineering"
+  },
+  {
+    "name": "James Perez",
+    "registro": "123456",
+    "carrer": "Mechanical Engineering"
+  },
+  {
+    "name": "Mia Gonzalez",
+    "registro": "678901",
+    "carrer": "Chemical Engineering"
+  },
+  {
+    "name": "Benjamin Sanchez",
+    "registro": "234567",
+    "carrer": "Civil Engineering"
+  },
+  {
+    "name": "John Doe",
+    "registro": "123456",
+    "carrer": "Computer Science"
+  },
+  {
+    "name": "Jane Smith",
+    "registro": "789012",
+    "carrer": "Electrical Engineering"
+  },
+  {
+    "name": "Michael Johnson",
+    "registro": "345678",
+    "carrer": "Mechanical Engineering"
+  },
+  {
+    "name": "Emily Davis",
+    "registro": "901234",
+    "carrer": "Chemical Engineering"
+  },
+  {
+    "name": "Daniel Wilson",
+    "registro": "567890",
+    "carrer": "Civil Engineering"
+  },
+  {
+    "name": "Sophia Taylor",
+    "registro": "123450",
+    "carrer": "Biomedical Engineering"
+  },
+  {
+    "name": "Matthew Anderson",
+    "registro": "678901",
+    "carrer": "Aerospace Engineering"
+  },
+  {
+    "name": "Olivia Martinez",
+    "registro": "234567",
+    "carrer": "Industrial Engineering"
+  },
+  {
+    "name": "Ethan Hernandez",
+    "registro": "890123",
+    "carrer": "Environmental Engineering"
+  },
+  {
+    "name": "Ava Lopez",
+    "registro": "456789",
+    "carrer": "Software Engineering"
+  },
+  {
+    "name": "William Garcia",
+    "registro": "012345",
+    "carrer": "Computer Engineering"
+  },
+  {
+    "name": "Isabella Rodriguez",
+    "registro": "567890",
+    "carrer": "Electrical Engineering"
+  },
+  {
+    "name": "James Perez",
+    "registro": "123456",
+    "carrer": "Mechanical Engineering"
+  },
+  {
+    "name": "Mia Gonzalez",
+    "registro": "678901",
+    "carrer": "Chemical Engineering"
+  },
+  {
+    "name": "Benjamin Sanchez",
+    "registro": "234567",
+    "carrer": "Civil Engineering"
+  }
+]
