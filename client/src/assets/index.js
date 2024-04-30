@@ -37,6 +37,7 @@ export { ReactComponent as IconoComputadora } from './svgs/computadora.svg';
 export { ReactComponent as IconoFolder } from './svgs/folder.svg';
 export { ReactComponent as IconoFAQ } from './svgs/faq.svg';
 export { ReactComponent as IconoLink } from './svgs/Link.svg';
+export { ReactComponent as IconoCheck } from './svgs/Check.svg';
 
 
 export { ReactComponent as IconoWhatsapp } from './svgs/Whatsapp.svg';

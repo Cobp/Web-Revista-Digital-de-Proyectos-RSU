@@ -1,0 +1,11 @@
+.container-card-proyects{
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax( 150px, 260px));
+    width: 100%;
+    gap: .5rem;
+    & .card-proyect{
+        height: 180px;
+        background-color: aquamarine;
+    }
+}

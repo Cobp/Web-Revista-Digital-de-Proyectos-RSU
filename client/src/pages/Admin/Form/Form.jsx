@@ -1,35 +1,44 @@
+import { useProyect } from '../../../contexts/ProyectsContext';
+import { useParams } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
+import { useEffect } from 'react';
 
-const Form = ({ fetchData, DB_URI}) => {
-    const { register, handleSubmit, reset } = useForm();
+const Form = () => {
+    const { register, handleSubmit, setValue } = useForm();
+    const { 
+        getProyect,
+        createProyect,
+        updatePoryect,
+    } = useProyect();
+    const params = useParams();
 
-    const onSubmit = async (formData) => {
-        try {
-            const response = await fetch(DB_URI , {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            });
-            if (!response.ok) {
-                throw new Error('Error al enviar los datos del formulario al servidor');
+    useEffect((() =>{
+        async function loadProyect() {
+            if (params.id){
+                const proyect = await getProyect(params.id);
+                setValue('ProyectCode', proyect.proyectCode);
             }
-            // Actualizar los datos después de enviar el formulario
-            fetchData();
-            // Limpiar el formulario después de enviar los datos
-            reset();
-        } catch (error) {
-            console.error('Error al enviar los datos:', error);
         }
-    };
+        loadProyect();
+    }))
+
+    const onSubmit = handleSubmit((proyect) => {
+        if (params.id){
+            updatePoryect(params.id, proyect)
+        }else{
+            createProyect(proyect);
+        }
+    })
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={onSubmit}>
             <div>
                 <label>Código Proyecto:</label>
-                <input type="number" required placeholder="Codigo del Proyecto" {...register('ProyectCode')}  />
+                <input type="number" required placeholder="Codigo del Proyecto" autoFocus {...register('ProyectCode')}  />
             </div>
+            {/* <div>
+                <input type='file' {...register('ImgProyect')}  />
+            </div> */}
             <div>
                 <label>Nombre Proyecto:</label>
                 <input type="text" required placeholder="Nombre del Proyecto" {...register('ProyectName')}  />
@@ -40,11 +49,11 @@ const Form = ({ fetchData, DB_URI}) => {
             </div>
             <div>
                 <label>Semestre de Inicio:</label>
-                <input type="text" required placeholder="Seleccionar" {...register('StartingSemester')}  />
+                <input type="number" required placeholder="Seleccionar" {...register('StartingSemester')}  />
             </div>
             <div>
                 <label>Semestre de Finalización:</label>
-                <input type="text" required placeholder="Seleccionar" {...register('EndingSemester')}  />
+                <input type="number" required placeholder="Seleccionar" {...register('EndingSemester')}  />
             </div>
             <div>
                 <label>CFunción universitaria:</label>

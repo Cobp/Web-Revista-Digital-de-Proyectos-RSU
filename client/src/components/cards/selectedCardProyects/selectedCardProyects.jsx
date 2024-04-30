@@ -1,30 +1,32 @@
+import { useState } from "react";
 import { QRCodeSVG } from "qrcode.react";
+import { Tooltip } from "../..";
 import {
-    // IconoStarFilled,
-    // IconoStarHalfFilled,
     Plus,
-    // IconoStar,
     IconoWhatsapp,
     IconoFacebook,
     IconoInstagram,
     IconoTwitterX,
+    IconoLink,
+    IconoCheck,
 } from "../../../assets";
 import Img from '../../../assets/images/logo-ueb-transparente.webp'
 import './selectedCard.Module.css'
-import { Tooltip } from "../..";
 
-const card1 = ({ selectedId, setSelectedId, contentRef }) => {
+const Card1 = ({ selectedId, setSelectedId, contentRef }) => {
+    const [copied, setCopied] = useState(false)
+    
     const URL = `https://ProyectosRSU/proyectos-rsu:${selectedId.Codigo_Proyecto}`;
     const Share = [
         {
             icon: <IconoWhatsapp/>,
             label: "Whatsapp",
-            url: '',
+            url: `https://wa.me/?text=http%3A%2F%2Flocalhost%3A3000%2Fproyectos-rsu`,
         },
         {
             icon: <IconoFacebook/>,
             label: "Facebook",
-            url: '',
+            url: `https://www.facebook.com/sharer/sharer.php?display=popup&sdk=joey&u=http%3A%2F%2Flocalhost%3A3000%2Fproyectos-rsu`,
         },
         {
             icon: <IconoInstagram/>,
@@ -34,16 +36,17 @@ const card1 = ({ selectedId, setSelectedId, contentRef }) => {
         {
             icon: <IconoTwitterX/>,
             label: "Twitter",
-            url: '',
+            url: `https://twitter.com/intent/tweet?refer_source=http%3A%2F%2Flocalhost%3A3000%2Fproyectos-rsu`,
         }
     ]
-    // const Value = false;
-    // const users = 54;
-    // const rating = 0;
-    // const DateStarRating = rating / users;
-    // const filledStars = Math.floor(DateStarRating);
-    // const remainder = rating - filledStars;
-    // const reviewMessage = DateStarRating === 0 ? '' : DateStarRating >= 3 ? 'Mayormente positivo' : 'Mayormente negativo';
+
+    const copyToClipboard = () => {
+        navigator.clipboard.writeText(URL)
+        setCopied(true);
+        setTimeout(() => {
+            setCopied(false);
+        }, 3000);
+    };
 
     return (
         <div className="card_show_selected">
@@ -108,11 +111,25 @@ const card1 = ({ selectedId, setSelectedId, contentRef }) => {
                                     <Tooltip
                                         label={item.label}
                                         position={"bottom"}
-                                        url={item.url}
                                         key={index} >
-                                        {item.icon}
+                                            <a className={`link ${item.label}`} href={item.url} target="_blank" rel="noreferrer">
+                                                {item.icon}
+                                            </a>
                                     </Tooltip>
                                 ))}
+                                <Tooltip
+                                    label={copied ? 'Copiado' : 'Copiar'}
+                                    position={"bottom"}
+                                    >
+                                        <div className="link copyLink" onClick={copyToClipboard}>
+                                            {copied 
+                                            ?
+                                            <IconoCheck/>
+                                            :
+                                            <IconoLink/>
+                                            }
+                                        </div>
+                                    </Tooltip>
                             </div>
                         </div>
                         <div className="container-card-date_C-E-R-R">
@@ -139,4 +156,4 @@ const card1 = ({ selectedId, setSelectedId, contentRef }) => {
     );
 };
 
-export default card1;
+export default Card1;
