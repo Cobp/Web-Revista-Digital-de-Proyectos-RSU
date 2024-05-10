@@ -106,13 +106,13 @@ const Card1 = ({ selectedId, setSelectedId, contentRef }) => {
                                 </div>
                             </div>
                             <div className="share-social-media">
-                                <h4>Compartir Proyecto :</h4>
+                                <h4>Compartir Proyecto</h4>
                                 {Share.map((item, index) => (
                                     <Tooltip
                                         label={item.label}
                                         position={"bottom"}
                                         key={index} >
-                                            <a className={`link ${item.label}`} href={item.url} target="_blank" rel="noreferrer">
+                                            <a className={`btn-tooltip link ${item.label}`} href={item.url} target="_blank" rel="noreferrer">
                                                 {item.icon}
                                             </a>
                                     </Tooltip>
@@ -121,7 +121,7 @@ const Card1 = ({ selectedId, setSelectedId, contentRef }) => {
                                     label={copied ? 'Copiado' : 'Copiar'}
                                     position={"bottom"}
                                     >
-                                        <div className="link copyLink" onClick={copyToClipboard}>
+                                        <div className="btn-tooltip link copyLink" onClick={copyToClipboard}>
                                             {copied 
                                             ?
                                             <IconoCheck/>

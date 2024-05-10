@@ -11,6 +11,7 @@ const ContCards = ({
   selectedId, setSelectedId }) => {
 
   const contentRef = useRef(null)
+  
   const handleCheckboxChange = (index) => {
     if (checkedIndex !== index) {
       setCheckedIndex(index);
@@ -55,7 +56,7 @@ const ContCards = ({
         {projectsData
           .filter((project) => project.Nombre_Proyecto.toLowerCase().includes(searchTerm.toLowerCase()))
           .map((project, index) => (
-            <CardProyects item={project} index={index} setSelectedId={setSelectedId}/>
+            <CardProyects item={project} key={index} setSelectedId={setSelectedId}/>
           ))}
       </div>
       <AnimatePresence>

@@ -1,0 +1,195 @@
+.container-success{
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    --color-alert-info: #19c37d;
+    --color-alert-info2: rgba(25, 195, 125, .3);
+    color: var(--color-alert-info);
+
+
+    &.small{
+        font-size: var(--fz-text-subtitulo2);
+        
+        & svg{
+            padding: 3px;
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &.medium{
+        font-size: var(--fz-text-titulo3);
+        
+        & svg{
+            padding: 3px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    &.big{
+        padding: 10px 15px;
+        background-color: var(--color-alert-info2);
+        border: 2px solid var(--color-alert-info2);
+        border-radius: 8px;
+        
+        & svg{
+            padding: 3px;
+            width: 40px;
+            height: 40px;
+        }
+
+        & .description-W{
+            font-size: var(--fz-text-subtitulo);
+        }
+    }
+}
+
+.container-info{
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    --color-alert-info: #3b82f6;
+    --color-alert-info2: rgba(59, 130, 246, .3);
+    color: var(--color-alert-info);
+
+
+    &.small{
+        font-size: var(--fz-text-subtitulo2);
+        
+        & svg{
+            padding: 3px;
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &.medium{
+        font-size: var(--fz-text-titulo3);
+        
+        & svg{
+            padding: 3px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    &.big{
+        padding: 10px 15px;
+        background-color: var(--color-alert-info2);
+        border: 2px solid var(--color-alert-info2);
+        border-radius: 8px;
+        
+        & svg{
+            padding: 3px;
+            width: 40px;
+            height: 40px;
+        }
+
+        & .description-W{
+            font-size: var(--fz-text-subtitulo);
+        }
+    }
+}
+
+.container-warning{
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    --color-alert-info: #ffbd44;
+    --color-alert-info2: rgba(255, 189, 68, .3);
+    color: var(--color-alert-info);
+
+    &.small{
+        font-size: var(--fz-text-subtitulo2);
+        
+        & svg{
+            padding: 3px;
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &.medium{
+        font-size: var(--fz-text-titulo3);
+        
+        & svg{
+            padding: 3px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    &.big{
+        padding: 10px 15px;
+        background-color: var(--color-alert-info2);
+        border: 2px solid var(--color-alert-info2);
+        border-radius: 8px;
+        
+        & svg{
+            padding: 3px;
+            width: 40px;
+            height: 40px;
+        }
+
+        & .description-W{
+            font-size: var(--fz-text-subtitulo);
+        }
+    
+    }
+}
+
+.container-error{
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    --color-alert-info: #dc143c;
+    --color-alert-info2: rgba(156, 7, 32, .3);
+    color: var(--color-alert-info);
+
+
+    &.small{
+        font-size: var(--fz-text-subtitulo2);
+        
+        & svg{
+            padding: 3px;
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &.medium{
+        font-size: var(--fz-text-titulo3);
+        
+        & svg{
+            padding: 3px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    &.big{
+        padding: 10px 15px;
+        background-color: var(--color-alert-info2);
+        border: 2px solid var(--color-alert-info2);
+        border-radius: 8px;
+        
+        & svg{
+            padding: 3px;
+            width: 40px;
+            height: 40px;
+        }
+
+        & .description-W{
+            font-size: var(--fz-text-subtitulo);
+        }
+    }
+}

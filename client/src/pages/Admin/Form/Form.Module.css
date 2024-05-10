@@ -1,0 +1,161 @@
+.Form-new-proyect{
+    display: flex;
+
+    & .form-inputs-data{
+        display: flex;
+        flex-direction: column;
+        padding: 0 30px;
+        gap: 15px;
+        width: 100%;
+
+        & .label-form-proyects{
+            --color: var(--color-blanco3);
+            position: relative;
+            border: 1px solid var(--color);
+            background-color: transparent;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            
+            &.number{
+                width: fit-content;
+
+                & input{
+                    width: 100px;
+
+                    &:focus{
+                        outline: 2px solid var(--color);
+                        border-radius: 8px 0 0 8px;
+                        background-color: var(--color-blanco1);
+                    }
+                }
+            }
+
+            &.text input{
+
+                &:focus{
+                    outline: 2px solid var(--color);
+                    border-radius: 8px;
+                    background-color: var(--color-blanco1);
+                }
+            }
+            
+            & input{
+                background-color: transparent;
+                outline: none;
+                border: none;
+                width: 100%;
+                padding: 8px 12px;
+                color: var(--color-gris2);
+                font-size: var(--fz-text-subtitulo);
+
+                &::placeholder{
+                    color: var(--color-gris1);
+                }
+
+                &::-webkit-inner-spin-button{
+                    display: none;
+                }
+            }
+
+            & .btn-input-number{
+                display: flex;
+                align-items: center;
+                height: 100%;
+                
+                & .btn-input{
+                    outline: none;
+                    border-top: none;
+                    border-right: none;
+                    border-bottom: none;
+                    border-left: 1px solid var(--color);
+                    padding: 6px;
+                    background-color: transparent;
+                    color: var(--color-gris1);
+                    width: 30px;
+                    cursor: pointer;
+
+                    &:hover{
+                        color: var(--color-gris2);
+                    }
+
+                    &:focus{
+                        background-color: var(--color);
+                        color: var(--color-gris2);
+                    }
+                }
+            }
+
+            &:hover{
+                background-color: var(--color-blanco2);
+            }
+
+            & .alert{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: -35px;
+                z-index: 999;
+            }
+
+            &.error{
+                --color: #ffbd44;
+                --color2: rgba(255, 190, 68, 0.1);
+                border-color: var(--color);
+                background-color: var(--color2);
+                color: var(--color);
+            }
+
+        }
+
+        & textarea{
+            outline: 2px solid transparent;
+            border: 1px solid var(--color-blanco3);
+            border-radius: 6px;
+            padding: 8px 12px;
+            color: var(--color-gris2);
+            transition: .3s ease;
+    
+            &:hover,
+            &:focus{
+                background-color: var(--color-blanco2);
+            }
+    
+            &:focus{
+                outline: 2px solid var(--color-blanco3);
+                background-color: var(--color-blanco1);
+            }
+    
+            &::placeholder{
+                color: var(--color-gris1);
+            }
+        }
+
+        & select{
+            outline: 2px solid transparent;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 12px;
+            background-color: transparent;
+            color: var(--color-gris2);
+            transition: .3s ease;
+
+            &:focus{
+                outline: 2px solid var(--color-blanco3);
+                background-color: var(--color-blanco1);
+            }
+
+            &[disabled]{
+                opacity: .5;
+            }
+        }
+
+        & .title-form{
+            padding: 5px 0;
+            color: var(--color-gris2);
+            font-size: var(--fz-text-subtitulo);
+        }
+    }
+    
+}
+

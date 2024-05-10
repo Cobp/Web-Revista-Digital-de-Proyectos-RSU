@@ -1,8 +1,6 @@
-const card2 = ({item, index, setSelectedId}) => {
+const card2 = ({ item, setSelectedId }) => {
     return (
-        <div key={index}
-            className='cards'
-            onClick={() => setSelectedId(item)}>
+        <div className='cards' onClick={() => setSelectedId(item)}>
             <div className='image_container'>
                 <img src={item.image} alt="" />
                 <span></span>
@@ -13,6 +11,6 @@ const card2 = ({item, index, setSelectedId}) => {
             </div>
         </div>
     )
-}
+};
 
-export default card2
+export default card2;

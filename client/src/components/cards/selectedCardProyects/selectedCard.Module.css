@@ -237,9 +237,49 @@
         padding: 10px 0;
         display: flex;
         align-items: center;
+        gap: 5px;
         & h4{
             color: var(--color-rojo2);
             width: 100%;
+        }
+        & .link {
+            padding: 5px;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            cursor: pointer;
+    
+            &.Whatsapp {
+                background-color: #25d366;
+            }
+    
+            &.Facebook {
+                background-color: #0866ff;
+            }
+    
+            &.Instagram {
+                background: -webkit-linear-gradient(45deg,
+                #f09433 0%,
+                #e6683c 25%,
+                #dc2743 50%,
+                #cc2366 75%,
+                #bc1888 100%);
+            }
+    
+            &.Twitter{
+                background-color: #000000;
+            }
+    
+            &.copyLink{
+                background-color: var(--color-rojo2);
+            }
+            
+            & svg {
+                color: var(--color-blanco1);
+            }
         }
     }
 }

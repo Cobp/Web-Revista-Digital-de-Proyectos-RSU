@@ -1,3 +1,6 @@
+export { default as Alert} from './alerts/Alert.jsx';
+
+
 export { default as NavbarRed} from './navbar/navbar.jsx';
 export { default as NavbarWhite} from './navbar/NavbarWhite.jsx';
 

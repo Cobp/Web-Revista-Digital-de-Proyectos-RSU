@@ -60,7 +60,7 @@ export function ProyectProvider({ children }) {
     const updateProyect = async (id, proyect) => {
         try {
             const res = await updateProyectRequest(id, proyect);
-            setProyects(proyects.map(proyect => proyect._id === id? res.data : proyect));
+            setProyects(proyects.map(proyect => proyect._id === id ? res.data : proyect));
         } catch (error) {
             console.error(error);
         }
