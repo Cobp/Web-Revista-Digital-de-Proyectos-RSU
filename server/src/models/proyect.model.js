@@ -42,7 +42,8 @@ const RSUProyects = new mongoose.Schema({
     RelatedExternalEntity:{ type: String },
     ExternalEntityData: { type: String }
 },{
-    timestamps: true
+    timestamps: true,
+    versionKey: false
 })
 
 export default mongoose.model('RSUProyects', RSUProyects)
