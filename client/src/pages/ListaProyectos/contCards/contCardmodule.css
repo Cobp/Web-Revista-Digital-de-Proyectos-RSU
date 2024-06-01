@@ -56,7 +56,7 @@
     padding: 5px;
 }
 .Container.gallery .container_cards .cards .main_content_cards .title_card {
-    font-size: var(--fz-text-titulo3);
+    font-size: var(--fz-text-subtitulo);
     font-weight: 600;
     overflow: hidden;
     white-space: nowrap;

@@ -28,6 +28,10 @@
     flex-direction: column;
     cursor: pointer;
     overflow: hidden;
+
+    &:hover .title{
+        color: var(--color-rojo2);
+    }
 }
 .cards_container_objetives .card img{
     width: 100%;
@@ -73,6 +77,7 @@
 
 .cards_container_objetives .card .title {
     font-family: 'Exo 2', sans-serif;
+    color: #333333;
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;

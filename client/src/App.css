@@ -57,6 +57,10 @@ img {
 body {
     background-color: var(--color-blanco1);
 }
+body.no-scroll {
+    overflow: hidden;
+    margin-right: 15px;
+}
 
 .App {
     position: relative;

@@ -23,9 +23,8 @@ const Form = () => {
     setValue,
     formState: { errors },
   } = useForm();
-  const { proyects, getProyect, createProyect, updatePoryect } = useProyect();
+  const { getProyect, createProyect, updatePoryect } = useProyect();
   const params = useParams();
-  var EndCode = proyects[proyects.length - 1].ProyectCode + 1;
 
   const facultadOnChange = (e) => {
     setFacultadSeleccionada(e.target.value);
@@ -39,9 +38,8 @@ const Form = () => {
         setValue("ProyectCode", proyect.proyectCode);
       }
     }
-    setCode(EndCode);
     loadProyect();
-  }, [setCode, setValue, EndCode, getProyect]);
+  }, [setCode, setValue, getProyect]);
 
   const onSubmit = handleSubmit((proyect) => {
     if (params.id) {
@@ -73,7 +71,6 @@ const Form = () => {
               <input
                 type="number"
                 placeholder="Codigo del Proyecto"
-                value={code}
                 {...register("ProyectCode", { required: true })}
               />
               <div className="btn-input-number">

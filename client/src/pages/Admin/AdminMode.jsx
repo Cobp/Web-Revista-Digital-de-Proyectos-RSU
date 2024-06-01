@@ -1,10 +1,10 @@
 import { useEffect, useState, useRef } from "react";
-import { IconoFilePlus } from "../../assets/index.js";
+import { Plus } from "../../assets/index.js";
 import { NavbarRed } from "../../components";
 import { useProyect } from "../../contexts/ProyectsContext.jsx";
-import "./Admin.Module.css";
-import Form from "./Form/Form.jsx";
 import TabProyects from "./TabProyects/TabProyects.jsx";
+import Form from "./Form/Form.jsx";
+import "./Admin.Module.css";
 
 function AdminMode() {
   const [openFomr, setOpenForm] = useState(false);
@@ -42,7 +42,7 @@ function AdminMode() {
         className="button-add"
         onClick={() => setOpenForm(!openFomr)}
       >
-        <span><IconoFilePlus />AGREGAR</span>
+        <span><Plus/> Nuevo</span>
       </button>
     );
   };
@@ -57,9 +57,7 @@ function AdminMode() {
         </div>
         {buttonAdd()}
       </div>
-      <div className="Administrative-Board">
-        <TabProyects proyects={proyects} />
-      </div>
+      <TabProyects proyects={proyects} />
       {openFomr && (
         <div className="screen-form">
           <div className="screen-form-data" ref={contentRef}>

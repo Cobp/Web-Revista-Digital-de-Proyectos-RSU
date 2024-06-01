@@ -1,5 +1,9 @@
 .Form-new-proyect{
     display: flex;
+    
+    @media (width <=1190px) {
+        flex-direction: column;
+    }
 
     & .form-inputs-data{
         display: flex;

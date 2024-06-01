@@ -1,4 +1,5 @@
 export const facultadesCarreras = {
+    "UEB": ["SERVICIOS ESTUDIANTILES"],
     "FC. AGROPECUARIA Y VETERINARIA": ["AGR", "MVZ"],
     "FC. CIENCIAS DE LA COMUNICACIÓN Y CULTURA": ["COM", "ING", "MUS"],
     "FC. CIENCIAS DE LA SALUD": ["BFM", "ENF", "LAB", "MED", "NUT"],

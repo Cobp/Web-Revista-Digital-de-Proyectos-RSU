@@ -69,8 +69,8 @@
     color: var(--color-blanco1);
     background-color: var(--color-rojo2);
     padding: 20px;
-    height: 220px;
     width: 300px;
+    gap: 1em;
 
     & svg{
         height: 80px;

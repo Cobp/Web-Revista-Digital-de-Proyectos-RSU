@@ -7,6 +7,8 @@ export { default as NavbarWhite} from './navbar/NavbarWhite.jsx';
 export { default as SelectedCardProyects} from './cards/selectedCardProyects/selectedCardProyects.jsx';
 export { default as CardProyects} from './cards/cardsProyects/cardsProyects.jsx';
 
+export { default as DropdownMenu} from './Dropdown-Menu/Dropdown.jsx';
+
 export { default as Slider} from './sliderCards/slider.jsx';
 
 export { default as Checkbox} from './inputs/inputs.jsx';

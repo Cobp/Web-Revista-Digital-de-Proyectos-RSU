@@ -6,6 +6,12 @@
     width: 350px;
     height: 400px;
 
+    @media (width <=1190px) {
+        width: 100%;
+        position: sticky;
+        top: 0;
+    }
+
     & img{
         height: 100%;
     }

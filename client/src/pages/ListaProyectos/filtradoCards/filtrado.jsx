@@ -1,4 +1,3 @@
-import { IconoFileDownload } from '../../../assets';
 import { Search } from '../../../components/index'
 import Academico from '../dataUEB.json'
 import './filtradoModule.css'
@@ -33,7 +32,6 @@ const filtrado = ({
         ))}
       </ol>
       <div className='PDf-Download'>
-        <IconoFileDownload/>
         <p>Descarga nuestra Revista Digital de todos los Proyectos RSU</p>
         <button type='button' className='btnDownloadPDF'>Descargar</button>
       </div>

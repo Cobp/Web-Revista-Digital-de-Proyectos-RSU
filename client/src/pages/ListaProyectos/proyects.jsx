@@ -1,13 +1,12 @@
 import { useState } from 'react';
 import { NavbarRed  } from '../../components';
 import { Gallery, Column, Search } from '../../assets';
-import Data from '../../components/sliderCards/data.json';
+import projectsData from '../../components/sliderCards/data.json';
 import Cards from './contCards/contCards';
 import Filter from './filtradoCards/filtrado';
 import './proyectsModule.css';
 
 const Proyects = () => {
-  const projectsData = Data.Proyects;
   const [classe, setClasse] = useState("gallery");
   const [checkedIndex, setCheckedIndex] = useState(0);
   const [searchTerm, setSearchTerm] = useState("");
